@@ -1,6 +1,6 @@
-# CareGrid Sentinel — district-level annual data (2020–2024)
+# CareGrid Sentinel - Kerala Disease Surveillance & Outbreak Intelligence
 
-## What is included
+## Historical annual dataset (2020-2024)
 - `data/processed/kerala_district_annual_disease_2020_2024.csv`: normalized long-format panel with annual cases and deaths for dengue and leptospirosis, split by the source's `Confirmed` and `Probable` labels.
 - `reports/kerala_district_annual_validation_2020_2024.csv`: district-sum totals by year, disease, and classification.
 - `reports/statewide_monthly_vs_district_annual_crosscheck_2021_2024.csv`: cross-source numeric comparison against the previously curated statewide monthly series.
