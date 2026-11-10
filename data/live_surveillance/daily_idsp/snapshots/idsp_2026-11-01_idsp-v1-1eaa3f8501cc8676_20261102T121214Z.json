@@ -1,0 +1,6712 @@
+{
+  "schema_version": 1,
+  "source_id": "kerala_dhs_idsp_daily_pdf",
+  "source_name": "Kerala Directorate of Health Services — IDSP daily reports",
+  "source_index_url": "https://dhs.kerala.gov.in/en/idsp-2/",
+  "source_page_url": "https://dhs.kerala.gov.in/en/2026/11/02/01-11-2026/",
+  "source_post_published_at": "2026-11-02T05:15:09+00:00",
+  "source_url": "https://dhs.kerala.gov.in/wp-content/uploads/2026/11/DR-CD-01.11.2026sd.pdf",
+  "source_document": "DR-CD-01.11.2026sd.pdf",
+  "report_date": "2026-11-01",
+  "retrieved_at_utc": "2026-11-02T12:12:14+00:00",
+  "retrieval_timestamp_basis": "Client UTC timestamp recorded immediately after successful PDF retrieval",
+  "source_response_date": "Mon, 02 Nov 2026 12:12:14 GMT",
+  "source_last_modified": "Mon, 02 Nov 2026 05:14:47 GMT",
+  "source_sha256": "1eaa3f8501cc8676fc566844fe99ce1a1cc431c788dc90e62ab012e91cf835b3",
+  "parser_version": 1,
+  "dataset_version": "idsp-v1-1eaa3f8501cc8676",
+  "validation_status": "passed_with_quality_flags",
+  "daily_district_report_available": true,
+  "district_report_error": null,
+  "reported_district_codes": [
+    "ALP",
+    "EKM",
+    "IDK",
+    "KKD",
+    "KLM",
+    "KNR",
+    "KSD",
+    "KTM",
+    "MPM",
+    "PKD",
+    "PTA",
+    "TSR",
+    "TVM",
+    "WYD"
+  ],
+  "district_code_mapping": {
+    "TVM": "Thiruvananthapuram",
+    "KLM": "Kollam",
+    "PTA": "Pathanamthitta",
+    "IDK": "Idukki",
+    "KTM": "Kottayam",
+    "ALP": "Alappuzha",
+    "EKM": "Ernakulam",
+    "TSR": "Thrissur",
+    "PKD": "Palakkad",
+    "MPM": "Malappuram",
+    "KKD": "Kozhikode",
+    "WYD": "Wayanad",
+    "KNR": "Kannur",
+    "KSD": "Kasaragod"
+  },
+  "district_reconciliation": [
+    {
+      "disease": "Dengue",
+      "classification": "Suspected",
+      "district_sum": 105,
+      "district_table_total": 105,
+      "difference": 0,
+      "reconciles": true,
+      "raw_total": "105"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "district_sum": 80,
+      "district_table_total": 80,
+      "difference": 0,
+      "reconciles": true,
+      "raw_total": "80"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Suspected",
+      "district_sum": 4,
+      "district_table_total": 4,
+      "difference": 0,
+      "reconciles": true,
+      "raw_total": "4"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "district_sum": 10,
+      "district_table_total": 10,
+      "difference": 0,
+      "reconciles": true,
+      "raw_total": "10"
+    }
+  ],
+  "count_dash_policy": "A printed hyphen is retained verbatim in source_values and normalized to numeric 0, matching the report's aggregate rows. Empty table cells remain null.",
+  "statewide_records": [
+    {
+      "disease": "Fever",
+      "disease_subtype": null,
+      "source_label": "Fever",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 3363,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 3363,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 2304100,
+        "confirmed_deaths": 10
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "3363",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "3363",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2304100",
+          "confirmed_deaths": "10"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Indigenous",
+      "source_label": "Malaria Ind.",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 4,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "4",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Imported",
+      "source_label": "Malaria Imp.",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1093,
+        "confirmed_deaths": 6
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1093",
+          "confirmed_deaths": "6"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue Fever",
+      "daily": {
+        "suspected_cases": 105,
+        "suspected_deaths": 0,
+        "confirmed_cases": 80,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 105,
+        "suspected_deaths": 0,
+        "confirmed_cases": 80,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 35419,
+        "suspected_deaths": 35,
+        "confirmed_cases": 13244,
+        "confirmed_deaths": 44
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "105",
+          "suspected_deaths": "-",
+          "confirmed_cases": "80",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "105",
+          "suspected_deaths": "-",
+          "confirmed_cases": "80",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "35419",
+          "suspected_deaths": "35",
+          "confirmed_cases": "13244",
+          "confirmed_deaths": "44"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 63,
+        "suspected_deaths": 0,
+        "confirmed_cases": 277,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "63",
+          "suspected_deaths": "-",
+          "confirmed_cases": "277",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Con JE",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 8,
+        "confirmed_deaths": 4
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "8",
+          "confirmed_deaths": "4"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "AES",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 115,
+        "confirmed_deaths": 26
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "115",
+          "confirmed_deaths": "26"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "daily": {
+        "suspected_cases": 4,
+        "suspected_deaths": 0,
+        "confirmed_cases": 10,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 4,
+        "suspected_deaths": 0,
+        "confirmed_cases": 10,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 1455,
+        "suspected_deaths": 92,
+        "confirmed_cases": 2465,
+        "confirmed_deaths": 123
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "4",
+          "suspected_deaths": "-",
+          "confirmed_cases": "10",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "4",
+          "suspected_deaths": "-",
+          "confirmed_cases": "10",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "1455",
+          "suspected_deaths": "92",
+          "confirmed_cases": "2465",
+          "confirmed_deaths": "123"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis-A",
+      "daily": {
+        "suspected_cases": 23,
+        "suspected_deaths": 0,
+        "confirmed_cases": 6,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 23,
+        "suspected_deaths": 0,
+        "confirmed_cases": 6,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 10704,
+        "suspected_deaths": 12,
+        "confirmed_cases": 6499,
+        "confirmed_deaths": 44
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "23",
+          "suspected_deaths": "-",
+          "confirmed_cases": "6",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "23",
+          "suspected_deaths": "-",
+          "confirmed_cases": "6",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "10704",
+          "suspected_deaths": "12",
+          "confirmed_cases": "6499",
+          "confirmed_deaths": "44"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Hepatitis E",
+      "disease_subtype": null,
+      "source_label": "Hepatitis-E",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 37,
+        "confirmed_deaths": 2
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "37",
+          "confirmed_deaths": "2"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Typhoid",
+      "disease_subtype": null,
+      "source_label": "Typhoid",
+      "daily": {
+        "suspected_cases": 2,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 2,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 1521,
+        "suspected_deaths": 2,
+        "confirmed_cases": 241,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "2",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "2",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "1521",
+          "suspected_deaths": "2",
+          "confirmed_cases": "241",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "ADD",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 638,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 638,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 517924,
+        "confirmed_deaths": 8
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "638",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "638",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "517924",
+          "confirmed_deaths": "8"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "daily": {
+        "suspected_cases": 2,
+        "suspected_deaths": 0,
+        "confirmed_cases": 2,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 2,
+        "suspected_deaths": 0,
+        "confirmed_cases": 2,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 1606,
+        "suspected_deaths": 2,
+        "confirmed_cases": 708,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "2",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "2",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "1606",
+          "suspected_deaths": "2",
+          "confirmed_cases": "708",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Mumps",
+      "disease_subtype": null,
+      "source_label": "Mumps",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 11,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 11,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 6854,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "11",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "11",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "6854",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 60,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 60,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 33091,
+        "confirmed_deaths": 10
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "60",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "60",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "33091",
+          "confirmed_deaths": "10"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 14,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 14,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 12069,
+        "confirmed_deaths": 123
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "14",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "14",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "12069",
+          "confirmed_deaths": "123"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "daily": {
+        "suspected_cases": 1,
+        "suspected_deaths": 0,
+        "confirmed_cases": 2,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 1,
+        "suspected_deaths": 0,
+        "confirmed_cases": 2,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 106,
+        "suspected_deaths": 1,
+        "confirmed_cases": 611,
+        "confirmed_deaths": 13
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "1",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "1",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "106",
+          "suspected_deaths": "1",
+          "confirmed_cases": "611",
+          "confirmed_deaths": "13"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Diphtheria",
+      "disease_subtype": null,
+      "source_label": "Diphtheria",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 11,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "11",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Rabies",
+      "disease_subtype": null,
+      "source_label": "Rabies",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 17,
+        "confirmed_deaths": 17
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "17",
+          "confirmed_deaths": "17"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Zika",
+      "disease_subtype": null,
+      "source_label": "Zika",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Nipah",
+      "disease_subtype": null,
+      "source_label": "Nipah",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Mpox",
+      "disease_subtype": null,
+      "source_label": "M Pox",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 8,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "8",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "source_label": "Shigella",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 1,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 116,
+        "suspected_deaths": 0,
+        "confirmed_cases": 561,
+        "confirmed_deaths": 8
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "116",
+          "suspected_deaths": "-",
+          "confirmed_cases": "561",
+          "confirmed_deaths": "8"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "West Nile",
+      "disease_subtype": null,
+      "source_label": "West Nile",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 26,
+        "suspected_deaths": 4,
+        "confirmed_cases": 14,
+        "confirmed_deaths": 0
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "26",
+          "suspected_deaths": "4",
+          "confirmed_cases": "14",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Amoebic Meningoencephalitis",
+      "disease_subtype": null,
+      "source_label": "Amebic Meningoencephalitis",
+      "daily": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "present_month": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 0,
+        "confirmed_deaths": 0
+      },
+      "cumulative_2026": {
+        "suspected_cases": 0,
+        "suspected_deaths": 0,
+        "confirmed_cases": 184,
+        "confirmed_deaths": 45
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "184",
+          "confirmed_deaths": "45"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    }
+  ],
+  "district_records": [
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 399,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "399"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 18,
+      "confirmed_cases": 2,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "18",
+        "8": "2",
+        "9": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 3,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "3",
+        "12": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 69,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "69"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "2"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "2"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "1"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 5,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "5"
+      },
+      "district_code": "TVM",
+      "district": "Thiruvananthapuram"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 216,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "216"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 12,
+      "confirmed_cases": 7,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "12",
+        "8": "7",
+        "9": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 2,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "2",
+        "12": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 18,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "18"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 7,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "7"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "KLM",
+      "district": "Kollam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 132,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "132"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "1"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 2,
+      "confirmed_cases": 2,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "2",
+        "8": "2",
+        "9": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 9,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "9"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "2"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "1"
+      },
+      "district_code": "PTA",
+      "district": "Pathanamthitta"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 14,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "14"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 6,
+      "confirmed_cases": 5,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "6",
+        "8": "5",
+        "9": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 1,
+      "confirmed_cases": 1,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "1",
+        "11": "1",
+        "12": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 4,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "4"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "IDK",
+      "district": "Idukki"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 132,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "132"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 4,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "4",
+        "8": "-",
+        "9": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 29,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "29"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "2"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "KTM",
+      "district": "Kottayam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 143,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "143"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 2,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "2",
+        "8": "-",
+        "9": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 1,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "1",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 24,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "24"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "1"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "ALP",
+      "district": "Alappuzha"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 217,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "217"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 3,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "3"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 18,
+      "confirmed_cases": 4,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "18",
+        "8": "4",
+        "9": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 2,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "2",
+        "12": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 65,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "65"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 6,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "6"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "2"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "1"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 6,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "6"
+      },
+      "district_code": "EKM",
+      "district": "Ernakulam"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 499,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "499"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "2"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 6,
+      "confirmed_cases": 13,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "6",
+        "8": "13",
+        "9": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 110,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "110"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 8,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "8"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "2"
+      },
+      "district_code": "TSR",
+      "district": "Thrissur"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 216,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "216"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 3,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "3"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 7,
+      "confirmed_cases": 37,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "7",
+        "8": "37",
+        "9": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 71,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "71"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "1"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "PKD",
+      "district": "Palakkad"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 499,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "499"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 7,
+      "confirmed_cases": 3,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "7",
+        "8": "3",
+        "9": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 82,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "82"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 11,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "11"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "MPM",
+      "district": "Malappuram"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 254,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "254"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 20,
+      "confirmed_cases": 6,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "20",
+        "8": "6",
+        "9": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 2,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "2",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 60,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "60"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 4,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "4"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "1"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 2,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "2"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "KKD",
+      "district": "Kozhikode"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 258,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "258"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 1,
+      "confirmed_cases": 1,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "1",
+        "8": "1",
+        "9": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 2,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "2",
+        "12": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 50,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "50"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 9,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "9"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "WYD",
+      "district": "Wayanad"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 61,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "61"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 3,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "3"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "-",
+        "8": "-",
+        "9": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 10,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "10"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 1,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "1"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "KNR",
+      "district": "Kannur"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "OP",
+      "source_label": "Fever — OP",
+      "metric_unit": "outpatient visits",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 323,
+      "reported_deaths": null,
+      "source_values": {
+        "2": "323"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Fever",
+      "disease_subtype": "IP",
+      "source_label": "Fever — IP",
+      "metric_unit": "inpatient admissions",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 7,
+      "reported_deaths": null,
+      "source_values": {
+        "3": "7"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "4": "-",
+        "5": "-",
+        "6": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue",
+      "metric_unit": "reported cases",
+      "suspected_cases": 2,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "7": "2",
+        "8": "-",
+        "9": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "10": "-",
+        "11": "-",
+        "12": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "Acute Diarrheal Disease",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 37,
+      "reported_deaths": null,
+      "source_values": {
+        "13": "37"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 8,
+      "reported_deaths": null,
+      "source_values": {
+        "14": "8"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis A",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "15": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "metric_unit": "reported cases",
+      "suspected_cases": 0,
+      "confirmed_cases": 0,
+      "suspected_deaths": 0,
+      "confirmed_deaths": 0,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "16": "-",
+        "17": "-",
+        "18": "-",
+        "19": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "Acute Encephalitis Syndrome",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "20": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Japanese Encephalitis",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": 0,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": null,
+      "source_values": {
+        "21": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax imported",
+      "source_label": "Malaria — Plasmodium vivax imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "22": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium vivax indigenous",
+      "source_label": "Malaria — Plasmodium vivax indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "23": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum imported",
+      "source_label": "Malaria — Plasmodium falciparum imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "24": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Plasmodium falciparum indigenous",
+      "source_label": "Malaria — Plasmodium falciparum indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "25": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection imported",
+      "source_label": "Malaria — Mixed infection imported",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "26": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Mixed infection indigenous",
+      "source_label": "Malaria — Mixed infection indigenous",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "27": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": null,
+      "source_label": "Malaria",
+      "metric_unit": "reported deaths",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": null,
+      "reported_deaths": 0,
+      "source_values": {
+        "28": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "29": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "30": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "metric_unit": "reported cases",
+      "suspected_cases": null,
+      "confirmed_cases": null,
+      "suspected_deaths": null,
+      "confirmed_deaths": null,
+      "reported_cases": 0,
+      "reported_deaths": null,
+      "source_values": {
+        "31": "-"
+      },
+      "district_code": "KSD",
+      "district": "Kasaragod"
+    }
+  ],
+  "provisional_warning": "The reported cases and deaths are based on a preliminary report and are liable to change after laboratory tests and death audits.",
+  "discovery_failures": [],
+  "quality_flags": [
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Fever",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Fever",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Fever",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Malaria",
+      "disease_subtype": "Indigenous",
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Malaria",
+      "disease_subtype": "Imported",
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Malaria",
+      "disease_subtype": "Imported",
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Malaria",
+      "disease_subtype": "Imported",
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Hepatitis E",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Mumps",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Mumps",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Mumps",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Rabies",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Zika",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Nipah",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Mpox",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Amoebic Meningoencephalitis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    }
+  ],
+  "validation_checks": [
+    "Report post link was discovered from the official DHS IDSP index; PDF URL extracted from the post, not guessed.",
+    "Official DHS PDF title and statewide/district table dates match 2026-11-01.",
+    "Preserved 26 statewide disease/subtype rows across daily, present-month and cumulative-2026 periods.",
+    "District-wise daily table validates all 14 official district codes and 294 disease/metric rows.",
+    "Raw source cell strings are retained. Empty cells remain null; printed hyphens are explicitly normalized as zero.",
+    "Source warns that cases/deaths are preliminary and subject to laboratory tests and death audits."
+  ],
+  "original_file": "data/raw/idsp_daily/DR-CD-01.11.2026sd.pdf"
+}

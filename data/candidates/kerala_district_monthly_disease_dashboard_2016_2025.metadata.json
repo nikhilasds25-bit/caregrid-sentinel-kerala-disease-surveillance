@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_name": "Kerala Health Department disease prevalence dashboard",
+  "source_url": "https://health.kerala.gov.in/disease_data.json",
+  "dashboard_url": "https://health.kerala.gov.in/static_disease_prevalence",
+  "source_snapshot_path": "C:\\Users\\Nikhil\\Desktop\\CareGrid-Sentinel\\data\\raw\\kerala_health_disease_data_2026-11-10.json",
+  "source_snapshot_date": "Tue, 10 Nov 2026 10:05:34 GMT",
+  "source_retrieved_at_utc": "2026-11-10T10:05:57.0743381+00:00",
+  "source_etag": "\"2096a5-6526c5fad5595\"",
+  "source_sha256": "ca401184db2f983030d3fd26eb94872aa3cc61f6be340067aef1e362bdd2101c",
+  "candidate_path": "C:\\Users\\Nikhil\\Desktop\\CareGrid-Sentinel\\data\\candidates\\kerala_district_monthly_disease_dashboard_2016_2025.csv",
+  "candidate_sha256": "283c202f132261b77f86710c32649f6102ce258e0cc54eaadd83d4fd808c0f23",
+  "candidate_rows": 6720,
+  "candidate_unique_periods": 120,
+  "candidate_districts": [
+    "Alappuzha",
+    "Ernakulam",
+    "Idukki",
+    "Kannur",
+    "Kasaragod",
+    "Kollam",
+    "Kottayam",
+    "Kozhikode",
+    "Malappuram",
+    "Palakkad",
+    "Pathanamthitta",
+    "Thiruvananthapuram",
+    "Thrissur",
+    "Wayanad"
+  ],
+  "candidate_classifications": [
+    "Confirmed",
+    "Suspected"
+  ],
+  "missing_source_category_rows": 336,
+  "reconciliation_path": "C:\\Users\\Nikhil\\Desktop\\CareGrid-Sentinel\\data\\candidates\\kerala_district_monthly_disease_dashboard_2016_2025_reconciliation.csv",
+  "reconciliation_sha256": "be1527ecb468f0bfa811314605b3c2835af6b8e4fa149cc055393e6a599c7486",
+  "monthly_dhs_comparison_path": "C:\\Users\\Nikhil\\Desktop\\CareGrid-Sentinel\\data\\candidates\\dhs_dashboard_monthly_comparison_2021_2025.csv",
+  "monthly_dhs_comparison_sha256": "e074b8722810524ffb7ce31c25c99f02462668f6e0b054d9e42ecad6789174d7",
+  "district_annual_comparison_path": "C:\\Users\\Nikhil\\Desktop\\CareGrid-Sentinel\\data\\candidates\\dhs_dashboard_district_annual_comparison_2020_2025.csv",
+  "district_annual_comparison_sha256": "e3a7255dc922576dd2034807adb9f9485195804ae26b1210c06b926cce4e2648"
+}

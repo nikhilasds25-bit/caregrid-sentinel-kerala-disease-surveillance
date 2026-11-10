@@ -1,0 +1,192 @@
+Source file: IDSP-Annual-Data-2024.pdf
+Source URL: https://dhs.kerala.gov.in/wp-content/uploads/2025/06/IDSP-Annual-Data-2024.pdf
+Note: PDF pages below are extracted text for audit; the PDF remains the authoritative source.
+
+================== PDF PAGE 2 ==================
+2
+egaP
+-
+MP
+60:50
+5202-nuJ-60
+no
+reciffO
+ecnallievruS
+etatS
+&
+)HP(SHD.lddA
+yb
+devorppA
+MHN/4202/REGANAM
+ATAD
+ETATS-PSDI/07/PSDI
+eliF
+fo
+4#
+tfarD
+DATA ON COMMUNICABLE DISEASES
+January - December 2024
+Sl. 2024
+Name of Diseases
+No. Case Death
+1 Dengue Fever: Confirmed 20674 128
+2 Dengue Fever: Probable 53536 13
+3 Malaria 952 6
+4 Chikungunya 29 2
+5 Acute Encephalitis Syndrome 100 33
+6 Japanese Encephalitis (JE) 10 4
+7 Leptospirosis : Confirmed 3552 251
+8 Leptospirosis : Probable 2428 143
+9 Hepatitis - A : Confirmed 7967 89
+10 Hepatitis - A : Probable 20445 7
+11 Hepatitis - B 1221 5
+12 Hepatitis - C 402 1
+13 Hepatitis - E 16 0
+14 Cholera 36 1
+15 Diphtheria 2 0
+16 Typhoid 171 1
+17 Acute Diarrheal Disease 517618 12
+18 Food Poisoning 3394 2
+19 Shigella 121 1
+20 Scrub Typhus 981 19
+21 Kala Azar 0 0
+22 Kysanur Forest Disease 0 0
+23 Influenza (H1N1, H3N2, Infl A, Infl B) 6886 91
+24 Rabies : Confirmed 22 22
+25 Rabies : Probable 4 4
+26 Zika 0 0
+27 West Nile 38 7
+28 Prob West Nile 27 0
+29 M Pox 7 0
+30 Nipah 2 2
+31 Amoebic Meningo Encephalitis 36 9
+32 Prob Amoebic Meningo Encephalitis 3 0
+33 Chicken Pox 27106 16
+Fever OP 2879108
+34 8
+(Undifferentiated) IP 43294
+
+================== PDF PAGE 17 ==================
+71
+egaP
+-
+MP
+60:50
+5202-nuJ-60
+no
+reciffO
+ecnallievruS
+etatS
+&
+)HP(SHD.lddA
+yb
+devorppA
+MHN/4202/REGANAM
+ATAD
+ETATS-PSDI/07/PSDI
+eliF
+fo
+4#
+tfarD
+Month Wise Data on Communicable Disease – 2024
+h Prob
+t Con:CG Con: Dengue Prob Lepto Con Lepto Malaria AES JE
+n Dengue
+o
+M
+C D C D C D C D C D C D C D C D
+Jan 4 0 3241 1 1629 9 171 10 186 13 27 0 5 1 0 1
+Feb 0 0 3025 0 1403 8 142 11 187 11 27 0 4 1 1 0
+Mar 0 0 2176 0 948 9 145 8 146 6 46 0 3 3 0 0
+Apr 0 0 1912 3 667 13 125 4 150 17 62 2 3 1 2 0
+May 2 1 3470 0 1203 13 112 4 194 9 64 1 20 10 1 1
+Jun 1 0 6618 4 2247 13 247 13 284 21 94 1 12 4 3 0
+Jul 5 0 9988 2 3863 14 274 16 440 34 147 0 8 2 1 1
+Aug 4 0 8688 1 3086 10 321 25 499 35 134 1 4 0 2 1
+Sep 2 0 5654 0 2205 10 249 18 409 33 92 0 8 3 0 0
+Oct 2 1 3832 0 1508 9 222 17 363 28 86 0 11 4 0 0
+Nov 8 0 2777 1 999 12 255 12 398 28 100 0 11 2 0 0
+Dec 1 0 2155 1 916 8 165 5 296 16 69 1 11 2 0 0
+Total 29 2 53536 13 20674 128 2428 143 3552 251 948 6 100 33 10 4
+h Con Con Con
+t Prob Hep A Con Hep A Con: Hep B Con Hep C Con Hep E
+n Cholera Typhoid Diphtheria
+o
+M
+C D C D C D C D C D C D C D C D
+Jan 596 1 261 0 83 2 45 1 0 0 1 0 7 0 0 0
+Feb 917 1 331 5 79 0 21 0 1 0 0 0 13 0 0 0
+Mar 1619 0 569 7 110 1 42 0 1 0 0 0 17 0 0 0
+Apr 1689 0 583 10 127 1 39 0 1 0 0 0 10 0 0 0
+May 1618 2 708 10 113 0 30 0 2 0 1 0 16 0 0 0
+Jun 2434 0 579 9 121 0 41 0 2 0 8 0 19 0 0 0
+Jul 2377 0 737 9 107 1 29 0 1 0 15 0 13 0 0 0
+Aug 2033 0 843 12 101 0 29 0 1 0 11 1 12 0 2 0
+Sep 1788 1 697 5 65 0 27 0 2 0 0 0 13 0 0 0
+Oct 1853 2 919 4 110 0 34 0 1 0 0 0 13 0 0 0
+Nov 1757 0 920 10 109 0 30 0 1 0 0 0 18 0 0 0
+Dec 1764 0 820 8 96 0 35 0 3 0 0 0 20 1 0 0
+Total 20445 7 7967 89 1221 5 402 1 16 0 36 1 171 1 2 0
+
+================== PDF PAGE 18 ==================
+81
+egaP
+-
+MP
+60:50
+5202-nuJ-60
+no
+reciffO
+ecnallievruS
+etatS
+&
+)HP(SHD.lddA
+yb
+devorppA
+MHN/4202/REGANAM
+ATAD
+ETATS-PSDI/07/PSDI
+eliF
+fo
+4#
+tfarD
+h Con Prob Food
+t Fever ADD Chicken Pox Influenza
+n Rabies Rabies Poisoning
+o
+M
+OP D op D C D C D C D C D C D
+Jan 232204 1 37277 0 2559 3 64 3 1 1 0 0 282 0
+Feb 215745 0 32832 0 2851 6 52 1 5 5 1 1 337 0
+Mar 165063 0 28733 1 2634 0 54 1 0 0 1 1 518 0
+Apr 167998 0 32100 2 2368 1 80 2 2 2 1 1 211 1
+May 175452 1 45623 0 2129 2 132 3 3 2 1 1 263 1
+Jun 245611 1 97529 3 1863 0 496 6 2 3 0 0 338 0
+Jul 343064 2 76039 3 2142 2 1706 30 0 0 0 0 150 0
+Aug 304357 0 42224 2 2067 1 1392 25 4 4 0 0 165 0
+Sep 290459 1 29161 0 1965 1 1048 11 1 1 0 0 0 0
+Oct 276161 0 30181 0 2170 0 749 4 2 2 0 0 185 0
+Nov 243906 1 31656 1 2137 0 646 3 2 2 0 0 299 0
+Dec 219088 1 34263 0 2221 0 467 2 0 0 0 0 646 0
+Total 2879108 8 517618 12 27106 16 6886 91 22 22 4 4 3394 2
+Con Con Prob Amoebic Con Amoebic
+h Con
+t Scrub West Con M Pox Con Nipah Meningoencep Meningoence
+n Shigella
+o Typhus Nile halitis phalitis
+M
+C D C D C D C D C D C D C D
+Jan 96 4 10 0 0 0 1 0 0 0 0 0 0 0
+Feb 62 0 11 0 0 0 0 0 0 0 0 0 0 0
+Mar 25 1 5 0 1 0 1 0 0 0 0 0 0 0
+Apr 12 0 0 0 0 0 0 0 0 0 0 0 0 0
+May 29 1 14 0 16 3 0 0 0 0 0 0 1 1
+Jun 33 0 23 0 11 2 0 0 0 0 0 0 2 0
+Jul 112 1 21 0 6 1 0 0 1 1 1 0 5 3
+Aug 122 1 3 0 1 0 0 0 0 0 2 0 8 0
+Sep 105 3 11 1 2 0 2 0 1 1 0 0 5 1
+Oct 97 5 11 0 0 0 0 0 0 0 0 0 10 2
+Nov 116 2 7 0 0 0 0 0 0 0 0 0 4 1
+Dec 172 1 5 0 1 1 3 0 0 0 0 0 1 1
+Total 981 19 121 1 38 7 7 0 2 2 3 0 36 9
+

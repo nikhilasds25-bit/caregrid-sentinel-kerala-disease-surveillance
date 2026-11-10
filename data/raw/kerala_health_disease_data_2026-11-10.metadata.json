@@ -1,0 +1,20 @@
+{
+  "source_url": "https://health.kerala.gov.in/disease_data.json",
+  "dashboard_url": "https://health.kerala.gov.in/static_disease_prevalence",
+  "retrieved_at_utc": "2026-11-10T10:05:57.0743381+00:00",
+  "response_date": "Tue, 10 Nov 2026 10:05:34 GMT",
+  "etag": "\"2096a5-6526c5fad5595\"",
+  "http_status": 200,
+  "bytes": 2135717,
+  "sha256": "ca401184db2f983030d3fd26eb94872aa3cc61f6be340067aef1e362bdd2101c",
+  "source_category_codes": {
+    "DENGUE|Con": "Confirmed",
+    "DENGUE|Sus": "Suspected",
+    "LEPTO|Con": "Confirmed",
+    "LEPTO|Sus": "Suspected"
+  },
+  "source_metric_keys": {
+    "C": "Cases",
+    "D": "Deaths"
+  }
+}

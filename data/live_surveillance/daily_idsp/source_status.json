@@ -1,0 +1,15 @@
+{
+  "last_attempt_status": "success",
+  "last_attempt": {
+    "timestamp_utc": "2026-11-02T13:02:21+00:00",
+    "status": "success",
+    "report_date": "2026-07-25",
+    "dataset_version": "idsp-v3-cb452200100f40e7",
+    "snapshot_file": "data/live_surveillance/daily_idsp/snapshots/idsp_2026-07-25_idsp-v3-cb452200100f40e7.json",
+    "cached_snapshot_retained": true,
+    "duplicate_snapshot": false
+  },
+  "latest_report_date": "2026-11-01",
+  "latest_snapshot_file": "data/live_surveillance/daily_idsp/snapshots/idsp_2026-11-01_idsp-v3-1eaa3f8501cc8676.json",
+  "latest_snapshot_version": "idsp-v3-1eaa3f8501cc8676"
+}

@@ -1,0 +1,12 @@
+{
+  "last_attempt_status": "success",
+  "last_attempt": {
+    "timestamp_utc": "2026-11-02T11:16:58+00:00",
+    "status": "success",
+    "dataset_version": "report-v3-sha256-c873a4266ee2ee88",
+    "snapshot_file": "data/live_surveillance/snapshots/dhs_2025_report-v3-sha256-c873a4266ee2ee88_20261102T111658Z.json",
+    "cached_snapshot_retained": true
+  },
+  "latest_snapshot_file": "data/live_surveillance/snapshots/dhs_2025_report-v3-sha256-c873a4266ee2ee88_20261102T111658Z.json",
+  "latest_snapshot_version": "report-v3-sha256-c873a4266ee2ee88"
+}

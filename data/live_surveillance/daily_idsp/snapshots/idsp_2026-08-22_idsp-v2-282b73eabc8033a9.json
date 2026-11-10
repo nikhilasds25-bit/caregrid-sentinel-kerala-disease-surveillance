@@ -1,0 +1,1887 @@
+{
+  "schema_version": 1,
+  "source_id": "kerala_dhs_idsp_daily_pdf",
+  "source_name": "Kerala Directorate of Health Services — IDSP daily reports",
+  "source_index_url": "https://dhs.kerala.gov.in/en/idsp-2/",
+  "source_page_url": "https://dhs.kerala.gov.in/en/2026/08/22/22-08-2026-2/",
+  "source_post_published_at": "2026-08-22T14:00:55+00:00",
+  "source_url": "https://dhs.kerala.gov.in/wp-content/uploads/2026/08/IDSP-Daily-Report-22.08.2026.pdf",
+  "source_document": "IDSP-Daily-Report-22.08.2026.pdf",
+  "report_date": "2026-08-22",
+  "retrieved_at_utc": "2026-11-02T12:43:04+00:00",
+  "retrieval_timestamp_basis": "Client UTC timestamp recorded immediately after successful PDF retrieval",
+  "source_response_date": "Mon, 02 Nov 2026 12:43:03 GMT",
+  "source_last_modified": "Sat, 22 Aug 2026 13:58:50 GMT",
+  "source_sha256": "282b73eabc8033a90b5116ae88322a314615cd65b104e4cc9bf0699d52de654e",
+  "parser_version": 2,
+  "dataset_version": "idsp-v2-282b73eabc8033a9",
+  "validation_status": "passed_with_quality_flags",
+  "daily_district_report_available": false,
+  "district_report_error": "Unexpected district-wise daily IDSP table dimensions.",
+  "reported_district_codes": [],
+  "district_code_mapping": {
+    "TVM": "Thiruvananthapuram",
+    "KLM": "Kollam",
+    "PTA": "Pathanamthitta",
+    "IDK": "Idukki",
+    "KTM": "Kottayam",
+    "ALP": "Alappuzha",
+    "EKM": "Ernakulam",
+    "TSR": "Thrissur",
+    "PKD": "Palakkad",
+    "MPM": "Malappuram",
+    "KKD": "Kozhikode",
+    "WYD": "Wayanad",
+    "KNR": "Kannur",
+    "KSD": "Kasaragod"
+  },
+  "district_reconciliation": [],
+  "count_dash_policy": "A printed hyphen is retained as source_dash_uninterpreted and its numeric value is null because the report provides no legend defining it. Blank/en/em-dash cells are retained as not_reported and numeric null. An explicit printed 0 is numeric zero.",
+  "statewide_records": [
+    {
+      "disease": "Fever",
+      "disease_subtype": null,
+      "source_label": "Fever",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 9223,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 211327,
+        "confirmed_deaths": 3
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1737773,
+        "confirmed_deaths": 9
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "9223",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "211327",
+          "confirmed_deaths": "3"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1737773",
+          "confirmed_deaths": "9"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Indigenous",
+      "source_label": "Malaria Ind.",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 4,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "4",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Malaria",
+      "disease_subtype": "Imported",
+      "source_label": "Malaria Imp.",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 5,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 107,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 748,
+        "confirmed_deaths": 3
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "5",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "107",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "748",
+          "confirmed_deaths": "3"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Dengue",
+      "disease_subtype": null,
+      "source_label": "Dengue Fever",
+      "daily": {
+        "suspected_cases": 151,
+        "suspected_deaths": null,
+        "confirmed_cases": 34,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 4769,
+        "suspected_deaths": null,
+        "confirmed_cases": 1656,
+        "confirmed_deaths": 7
+      },
+      "cumulative_2026": {
+        "suspected_cases": 26236,
+        "suspected_deaths": 24,
+        "confirmed_cases": 9424,
+        "confirmed_deaths": 38
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "151",
+          "suspected_deaths": "-",
+          "confirmed_cases": "34",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "4769",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1656",
+          "confirmed_deaths": "7"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "26236",
+          "suspected_deaths": "24",
+          "confirmed_cases": "9424",
+          "confirmed_deaths": "38"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "source_label": "Chikungunya",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 2,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 3,
+        "suspected_deaths": null,
+        "confirmed_cases": 47,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": 63,
+        "suspected_deaths": null,
+        "confirmed_cases": 144,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "3",
+          "suspected_deaths": "-",
+          "confirmed_cases": "47",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "63",
+          "suspected_deaths": "-",
+          "confirmed_cases": "144",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Japanese Encephalitis",
+      "disease_subtype": null,
+      "source_label": "Con JE",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 8,
+        "confirmed_deaths": 4
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "8",
+          "confirmed_deaths": "4"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Acute Encephalitis Syndrome",
+      "disease_subtype": null,
+      "source_label": "AES",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 12,
+        "confirmed_deaths": 4
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 100,
+        "confirmed_deaths": 23
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "12",
+          "confirmed_deaths": "4"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "100",
+          "confirmed_deaths": "23"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "source_label": "Leptospirosis",
+      "daily": {
+        "suspected_cases": 8,
+        "suspected_deaths": 1,
+        "confirmed_cases": 20,
+        "confirmed_deaths": 1
+      },
+      "present_month": {
+        "suspected_cases": 174,
+        "suspected_deaths": 12,
+        "confirmed_cases": 320,
+        "confirmed_deaths": 15
+      },
+      "cumulative_2026": {
+        "suspected_cases": 1098,
+        "suspected_deaths": 65,
+        "confirmed_cases": 1702,
+        "confirmed_deaths": 78
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "8",
+          "suspected_deaths": "1",
+          "confirmed_cases": "20",
+          "confirmed_deaths": "1"
+        },
+        "present_month": {
+          "suspected_cases": "174",
+          "suspected_deaths": "12",
+          "confirmed_cases": "320",
+          "confirmed_deaths": "15"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "1098",
+          "suspected_deaths": "65",
+          "confirmed_cases": "1702",
+          "confirmed_deaths": "78"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Hepatitis A",
+      "disease_subtype": null,
+      "source_label": "Hepatitis-A",
+      "daily": {
+        "suspected_cases": 57,
+        "suspected_deaths": null,
+        "confirmed_cases": 22,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 869,
+        "suspected_deaths": null,
+        "confirmed_cases": 545,
+        "confirmed_deaths": 6
+      },
+      "cumulative_2026": {
+        "suspected_cases": 8140,
+        "suspected_deaths": 10,
+        "confirmed_cases": 5227,
+        "confirmed_deaths": 37
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "57",
+          "suspected_deaths": "-",
+          "confirmed_cases": "22",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "869",
+          "suspected_deaths": "-",
+          "confirmed_cases": "545",
+          "confirmed_deaths": "6"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "8140",
+          "suspected_deaths": "10",
+          "confirmed_cases": "5227",
+          "confirmed_deaths": "37"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Hepatitis E",
+      "disease_subtype": null,
+      "source_label": "Hepatitis-E",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 6,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 22,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "6",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "22",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Cholera",
+      "disease_subtype": null,
+      "source_label": "Cholera",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Typhoid",
+      "disease_subtype": null,
+      "source_label": "Typhoid",
+      "daily": {
+        "suspected_cases": 3,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 133,
+        "suspected_deaths": 1,
+        "confirmed_cases": 13,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": 1185,
+        "suspected_deaths": 2,
+        "confirmed_cases": 187,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "3",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "133",
+          "suspected_deaths": "1",
+          "confirmed_cases": "13",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "1185",
+          "suspected_deaths": "2",
+          "confirmed_cases": "187",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Acute Diarrheal Disease",
+      "disease_subtype": null,
+      "source_label": "ADD",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1002,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 31732,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 426428,
+        "confirmed_deaths": 8
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1002",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "31732",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "426428",
+          "confirmed_deaths": "8"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Measles",
+      "disease_subtype": null,
+      "source_label": "Measles",
+      "daily": {
+        "suspected_cases": 4,
+        "suspected_deaths": null,
+        "confirmed_cases": 2,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 65,
+        "suspected_deaths": null,
+        "confirmed_cases": 34,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": 608,
+        "suspected_deaths": null,
+        "confirmed_cases": 280,
+        "confirmed_deaths": 1
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "4",
+          "suspected_deaths": "-",
+          "confirmed_cases": "2",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "65",
+          "suspected_deaths": "-",
+          "confirmed_cases": "34",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "608",
+          "suspected_deaths": "-",
+          "confirmed_cases": "280",
+          "confirmed_deaths": "1"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Mumps",
+      "disease_subtype": null,
+      "source_label": "Mumps",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 4,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 185,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 5921,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "4",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "185",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "5921",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Chicken Pox",
+      "disease_subtype": null,
+      "source_label": "Chicken Pox",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 69,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1558,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 27923,
+        "confirmed_deaths": 9
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "69",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1558",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "27923",
+          "confirmed_deaths": "9"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Influenza",
+      "disease_subtype": null,
+      "source_label": "Influenza",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 92,
+        "confirmed_deaths": 1
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 2003,
+        "confirmed_deaths": 27
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 7948,
+        "confirmed_deaths": 94
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "92",
+          "confirmed_deaths": "1"
+        },
+        "present_month": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "2003",
+          "confirmed_deaths": "27"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "",
+          "suspected_deaths": "",
+          "confirmed_cases": "7948",
+          "confirmed_deaths": "94"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "present_month": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "not_reported",
+          "suspected_deaths": "not_reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "source_label": "Scrub Typhus",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 6,
+        "suspected_deaths": null,
+        "confirmed_cases": 67,
+        "confirmed_deaths": 4
+      },
+      "cumulative_2026": {
+        "suspected_cases": 88,
+        "suspected_deaths": null,
+        "confirmed_cases": 441,
+        "confirmed_deaths": 10
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "6",
+          "suspected_deaths": "-",
+          "confirmed_cases": "67",
+          "confirmed_deaths": "4"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "88",
+          "suspected_deaths": "-",
+          "confirmed_cases": "441",
+          "confirmed_deaths": "10"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Diphtheria",
+      "disease_subtype": null,
+      "source_label": "Diphtheria",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 1,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": 6,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "1",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "6",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Rabies",
+      "disease_subtype": null,
+      "source_label": "Rabies",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 13,
+        "confirmed_deaths": 13
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "13",
+          "confirmed_deaths": "13"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Zika",
+      "disease_subtype": null,
+      "source_label": "Zika",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Nipah",
+      "disease_subtype": null,
+      "source_label": "Nipah",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Mpox",
+      "disease_subtype": null,
+      "source_label": "M Pox",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 8,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "8",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "source_label": "Shigella",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 1,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": 3,
+        "suspected_deaths": null,
+        "confirmed_cases": 37,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": 106,
+        "suspected_deaths": null,
+        "confirmed_cases": 446,
+        "confirmed_deaths": 8
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "1",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "3",
+          "suspected_deaths": "-",
+          "confirmed_cases": "37",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "106",
+          "suspected_deaths": "-",
+          "confirmed_cases": "446",
+          "confirmed_deaths": "8"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "West Nile",
+      "disease_subtype": null,
+      "source_label": "West Nile",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": 1,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "cumulative_2026": {
+        "suspected_cases": 29,
+        "suspected_deaths": 4,
+        "confirmed_cases": 10,
+        "confirmed_deaths": null
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "1",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "29",
+          "suspected_deaths": "4",
+          "confirmed_cases": "10",
+          "confirmed_deaths": "-"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "reported",
+          "suspected_deaths": "reported",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    },
+    {
+      "disease": "Amoebic Meningoencephalitis",
+      "disease_subtype": null,
+      "source_label": "Amebic Meningoencephalitis",
+      "daily": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": null,
+        "confirmed_deaths": null
+      },
+      "present_month": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 10,
+        "confirmed_deaths": 1
+      },
+      "cumulative_2026": {
+        "suspected_cases": null,
+        "suspected_deaths": null,
+        "confirmed_cases": 167,
+        "confirmed_deaths": 43
+      },
+      "source_values": {
+        "daily": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "-",
+          "confirmed_deaths": "-"
+        },
+        "present_month": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "10",
+          "confirmed_deaths": "1"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "-",
+          "suspected_deaths": "-",
+          "confirmed_cases": "167",
+          "confirmed_deaths": "43"
+        }
+      },
+      "source_value_status": {
+        "daily": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "source_dash_uninterpreted",
+          "confirmed_deaths": "source_dash_uninterpreted"
+        },
+        "present_month": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        },
+        "cumulative_2026": {
+          "suspected_cases": "source_dash_uninterpreted",
+          "suspected_deaths": "source_dash_uninterpreted",
+          "confirmed_cases": "reported",
+          "confirmed_deaths": "reported"
+        }
+      },
+      "source_period_labels": {
+        "daily": "Daily",
+        "present_month": "Present Month",
+        "cumulative_2026": "Cumulative 2026"
+      }
+    }
+  ],
+  "district_records": [],
+  "provisional_warning": "The reported cases and deaths are based on a preliminary report and are liable to change after laboratory tests and death audits.",
+  "discovery_failures": [],
+  "quality_flags": [
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Chikungunya",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "daily",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Leptospirosis",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Scrub Typhus",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "present_month",
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    },
+    {
+      "scope": "statewide",
+      "period": "cumulative_2026",
+      "disease": "Shigella",
+      "disease_subtype": null,
+      "reason": "Confirmed cases exceed suspected cases; values retained as source reported."
+    }
+  ],
+  "validation_checks": [
+    "Report post link was discovered from the official DHS IDSP index; PDF URL extracted from the post, not guessed.",
+    "Official DHS PDF title and statewide/district table dates match 2026-08-22.",
+    "Preserved 26 statewide disease/subtype rows across daily, present-month and cumulative-2026 periods.",
+    "District-wise report is unavailable; no historical district data were substituted.",
+    "Raw source cell strings and explicit-value statuses are retained. Printed hyphens are not assumed to mean zero; blank cells remain not reported.",
+    "Source warns that cases/deaths are preliminary and subject to laboratory tests and death audits."
+  ],
+  "original_file": "data/raw/idsp_daily/IDSP-Daily-Report-22.08.2026.pdf"
+}
