@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+reports/figures/
+dashboard/node_modules/
+dashboard/dist/
+dashboard/tsconfig.tsbuildinfo
