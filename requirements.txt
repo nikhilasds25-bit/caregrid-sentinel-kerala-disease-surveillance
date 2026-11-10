@@ -1,0 +1,11 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+requests
+jupyter
+openpyxl
+pdfplumber
+fastapi
+uvicorn
+pytest
