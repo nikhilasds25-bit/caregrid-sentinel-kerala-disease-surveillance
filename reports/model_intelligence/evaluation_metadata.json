@@ -1,0 +1,8 @@
+{
+  "source_experiment_directory": "reports\\multimodel_experiment",
+  "prediction_file_sha256": "46c70a4a75c65ce1b7efa535305a3dfa7aa67bc04d38ed77538b7757995aeca2",
+  "equivalent_observation_records_validated": 11760,
+  "selection_uses_validation_phase": "rolling_origin",
+  "final_holdout_used_for_selection": false,
+  "model_failure_rows": 0
+}

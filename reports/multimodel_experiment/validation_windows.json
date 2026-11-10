@@ -1,0 +1,58 @@
+[
+  {
+    "window_id": "rolling_origin-2018-12",
+    "phase": "rolling_origin",
+    "origin_period": "2018-12",
+    "target_start": "2019-01",
+    "target_end": "2019-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "rolling_origin-2019-12",
+    "phase": "rolling_origin",
+    "origin_period": "2019-12",
+    "target_start": "2020-01",
+    "target_end": "2020-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "rolling_origin-2020-12",
+    "phase": "rolling_origin",
+    "origin_period": "2020-12",
+    "target_start": "2021-01",
+    "target_end": "2021-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "rolling_origin-2021-12",
+    "phase": "rolling_origin",
+    "origin_period": "2021-12",
+    "target_start": "2022-01",
+    "target_end": "2022-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "rolling_origin-2022-12",
+    "phase": "rolling_origin",
+    "origin_period": "2022-12",
+    "target_start": "2023-01",
+    "target_end": "2023-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "rolling_origin-2023-12",
+    "phase": "rolling_origin",
+    "origin_period": "2023-12",
+    "target_start": "2024-01",
+    "target_end": "2024-12",
+    "horizon_months": 12
+  },
+  {
+    "window_id": "final_2025-2024-12",
+    "phase": "final_2025",
+    "origin_period": "2024-12",
+    "target_start": "2025-01",
+    "target_end": "2025-12",
+    "horizon_months": 12
+  }
+]

@@ -1,0 +1,926 @@
+{
+  "experiment_generated_at_utc": "2026-11-02T17:31:07+00:00",
+  "source_dataset": "data/processed/kerala_disease_monthly_2021_2024.csv",
+  "source_sha256": "74a77ef823363bf540e2ed1579765f50bb59bf10eed0e9c48526c01658e755f3",
+  "weather_source_sha256": "af0c03f943725ddd7ea14dd2daf20f1a267fb32567c85f61e8f612e81fe25b2d",
+  "source_columns": [
+    "period",
+    "disease",
+    "classification",
+    "classification_note",
+    "cases",
+    "source_label",
+    "source_file",
+    "source_page",
+    "source_url"
+  ],
+  "monthly_dataset_coverage": {
+    "first_month": "2021-01",
+    "last_month": "2024-12",
+    "unique_months": 48,
+    "records": 96
+  },
+  "series": [
+    {
+      "valid_observations": 12,
+      "first_reporting_month": "2021-01",
+      "last_reporting_month": "2021-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The 2021 statewide annual/monthly tables do not publish separate probable rows for these diseases. Do not assume this label is equivalent to the later explicit Confirmed classification."
+      ],
+      "source_files": [
+        "DATA-ON-COMMUNICABLE-DISEASE-2021.pdf"
+      ],
+      "source_change": false,
+      "outliers_for_review_iqr_rule": [
+        {
+          "period": "2021-06",
+          "cases": 508
+        },
+        {
+          "period": "2021-07",
+          "cases": 938
+        }
+      ],
+      "disease": "Dengue",
+      "classification": "reported_category_status_not_split",
+      "observations_are_monthly_reported_cases": true
+    },
+    {
+      "valid_observations": 12,
+      "first_reporting_month": "2022-01",
+      "last_reporting_month": "2022-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The annual summary lists probable dengue and probable leptospirosis separately. The monthly table reports the non-probable categories; its monthly header does not explicitly say Confirmed."
+      ],
+      "source_files": [
+        "CD-Data-2022_Signed.pdf"
+      ],
+      "source_change": false,
+      "outliers_for_review_iqr_rule": [],
+      "disease": "Dengue",
+      "classification": "non_probable_category_probable_separate",
+      "observations_are_monthly_reported_cases": true
+    },
+    {
+      "valid_observations": 24,
+      "first_reporting_month": "2023-01",
+      "last_reporting_month": "2024-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The DHS report explicitly labels this monthly category as confirmed."
+      ],
+      "source_files": [
+        "Final-IDSP-70-IDSP-STATE_DATA_MANAGER-2024-NHM-pages.pdf",
+        "IDSP-Annual-Data-2024.pdf"
+      ],
+      "source_change": true,
+      "outliers_for_review_iqr_rule": [],
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "observations_are_monthly_reported_cases": true
+    },
+    {
+      "valid_observations": 12,
+      "first_reporting_month": "2021-01",
+      "last_reporting_month": "2021-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The 2021 statewide annual/monthly tables do not publish separate probable rows for these diseases. Do not assume this label is equivalent to the later explicit Confirmed classification."
+      ],
+      "source_files": [
+        "DATA-ON-COMMUNICABLE-DISEASE-2021.pdf"
+      ],
+      "source_change": false,
+      "outliers_for_review_iqr_rule": [],
+      "disease": "Leptospirosis",
+      "classification": "reported_category_status_not_split",
+      "observations_are_monthly_reported_cases": true
+    },
+    {
+      "valid_observations": 12,
+      "first_reporting_month": "2022-01",
+      "last_reporting_month": "2022-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The annual summary lists probable dengue and probable leptospirosis separately. The monthly table reports the non-probable categories; its monthly header does not explicitly say Confirmed."
+      ],
+      "source_files": [
+        "CD-Data-2022_Signed.pdf"
+      ],
+      "source_change": false,
+      "outliers_for_review_iqr_rule": [],
+      "disease": "Leptospirosis",
+      "classification": "non_probable_category_probable_separate",
+      "observations_are_monthly_reported_cases": true
+    },
+    {
+      "valid_observations": 24,
+      "first_reporting_month": "2023-01",
+      "last_reporting_month": "2024-12",
+      "missing_months": [],
+      "duplicate_months": [],
+      "zero_observations": 0,
+      "classification_consistent": true,
+      "classification_notes": [
+        "The DHS report explicitly labels this monthly category as confirmed."
+      ],
+      "source_files": [
+        "Final-IDSP-70-IDSP-STATE_DATA_MANAGER-2024-NHM-pages.pdf",
+        "IDSP-Annual-Data-2024.pdf"
+      ],
+      "source_change": true,
+      "outliers_for_review_iqr_rule": [],
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "observations_are_monthly_reported_cases": true
+    }
+  ],
+  "evaluation": {
+    "proposed_2021_2023_train_2024_test_feasible": false,
+    "proposed_split_reason": "The 2021 category is status-not-split and the 2022 category is a non-probable category; neither is documented as compatible with explicit Confirmed in 2023-2024.",
+    "confirmed_2023_train_2024_test": {
+      "Dengue": {
+        "eligible_for_limited_2024_holdout": true,
+        "observations": 24,
+        "training_period": [
+          "2023-01",
+          "2023-12"
+        ],
+        "test_period": [
+          "2024-01",
+          "2024-12"
+        ],
+        "reason": "Complete, unique 2023-2024 monthly observations with the same explicit Confirmed category and documentation note.",
+        "source_files_by_year": {
+          "2023": [
+            "Final-IDSP-70-IDSP-STATE_DATA_MANAGER-2024-NHM-pages.pdf"
+          ],
+          "2024": [
+            "IDSP-Annual-Data-2024.pdf"
+          ]
+        }
+      },
+      "Leptospirosis": {
+        "eligible_for_limited_2024_holdout": true,
+        "observations": 24,
+        "training_period": [
+          "2023-01",
+          "2023-12"
+        ],
+        "test_period": [
+          "2024-01",
+          "2024-12"
+        ],
+        "reason": "Complete, unique 2023-2024 monthly observations with the same explicit Confirmed category and documentation note.",
+        "source_files_by_year": {
+          "2023": [
+            "Final-IDSP-70-IDSP-STATE_DATA_MANAGER-2024-NHM-pages.pdf"
+          ],
+          "2024": [
+            "IDSP-Annual-Data-2024.pdf"
+          ]
+        }
+      }
+    },
+    "rolling_origin_12_month_horizon_feasible": false,
+    "rolling_origin_reason": "Only 24 adjacent, explicitly Confirmed observations are available (2023-2024). A 12-month initial training period and 12-month horizon yields only one origin, not repeated rolling-origin validation."
+  },
+  "annual_district_dataset_used": false,
+  "annual_district_dataset_note": "data/processed/kerala_district_annual_disease_2020_2024.csv is annual and excluded from monthly model targets.",
+  "2025_annual_surveillance_used": false,
+  "2025_annual_surveillance_note": "The separate 2025 DHS annual report remains excluded because monthly comparable case definitions have not been established.",
+  "idsp_daily_used": false,
+  "idsp_daily_note": "Daily 2026 suspected/confirmed IDSP figures are not merged with the historical monthly classifications.",
+  "climate": {
+    "weather_dataset": "data/processed/kerala_weather_monthly_district_proxy_2021_2024.csv",
+    "columns": [
+      "period",
+      "precipitation_sum_mm",
+      "temperature_2m_mean_c",
+      "temperature_2m_min_c",
+      "temperature_2m_max_c"
+    ],
+    "matched_confirmed_disease_months": 24,
+    "weather_scope": "Equal-weight proxy of 14 representative district locations; not population weighted.",
+    "climate_model_evaluated": false,
+    "reason_not_evaluated": "The compatible training window has only 12 months, insufficient for defensible climate-lag selection or multivariable estimation. Observed 2024 weather is also not a feature available at a 2023 forecast origin; using it for the 2024 horizon would leak future information."
+  },
+  "figures": [
+    "reports/figures/forecasting_dengue_actual_vs_predicted.png",
+    "reports/figures/forecasting_dengue_residuals.png",
+    "reports/figures/forecasting_leptospirosis_actual_vs_predicted.png",
+    "reports/figures/forecasting_leptospirosis_residuals.png",
+    "reports/figures/forecasting_baseline_error_comparison.png"
+  ],
+  "evaluation_metrics": [
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "model": "naive",
+      "mae": 867.3333333333334,
+      "rmse": 987.8264017528586,
+      "mase": null,
+      "test_observations": 12,
+      "training_observations": 12,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12",
+      "mase_note": "Seasonal MASE is undefined: training has no pairs 12 months apart."
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "model": "seasonal_naive",
+      "mae": 727.8333333333334,
+      "rmse": 805.0048654097275,
+      "mase": null,
+      "test_observations": 12,
+      "training_observations": 12,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12",
+      "mase_note": "Seasonal MASE is undefined: training has no pairs 12 months apart."
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "model": "naive",
+      "mae": 105.16666666666667,
+      "rmse": 119.13018089468345,
+      "mase": null,
+      "test_observations": 12,
+      "training_observations": 12,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12",
+      "mase_note": "Seasonal MASE is undefined: training has no pairs 12 months apart."
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "model": "seasonal_naive",
+      "mae": 94.58333333333333,
+      "rmse": 112.41329992487543,
+      "mase": null,
+      "test_observations": 12,
+      "training_observations": 12,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12",
+      "mase_note": "Seasonal MASE is undefined: training has no pairs 12 months apart."
+    }
+  ],
+  "actual_vs_predicted": [
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-01",
+      "model": "naive",
+      "actual_cases": 1629.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -441.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-02",
+      "model": "naive",
+      "actual_cases": 1403.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -667.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-03",
+      "model": "naive",
+      "actual_cases": 948.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -1122.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-04",
+      "model": "naive",
+      "actual_cases": 667.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -1403.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-05",
+      "model": "naive",
+      "actual_cases": 1203.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -867.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-06",
+      "model": "naive",
+      "actual_cases": 2247.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": 177.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-07",
+      "model": "naive",
+      "actual_cases": 3863.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": 1793.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-08",
+      "model": "naive",
+      "actual_cases": 3086.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": 1016.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-09",
+      "model": "naive",
+      "actual_cases": 2205.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": 135.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-10",
+      "model": "naive",
+      "actual_cases": 1508.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -562.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-11",
+      "model": "naive",
+      "actual_cases": 999.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -1071.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-12",
+      "model": "naive",
+      "actual_cases": 916.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -1154.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-01",
+      "model": "seasonal_naive",
+      "actual_cases": 1629.0,
+      "predicted_cases": 443.0,
+      "residual_actual_minus_predicted": 1186.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-02",
+      "model": "seasonal_naive",
+      "actual_cases": 1403.0,
+      "predicted_cases": 263.0,
+      "residual_actual_minus_predicted": 1140.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-03",
+      "model": "seasonal_naive",
+      "actual_cases": 948.0,
+      "predicted_cases": 273.0,
+      "residual_actual_minus_predicted": 675.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-04",
+      "model": "seasonal_naive",
+      "actual_cases": 667.0,
+      "predicted_cases": 200.0,
+      "residual_actual_minus_predicted": 467.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-05",
+      "model": "seasonal_naive",
+      "actual_cases": 1203.0,
+      "predicted_cases": 568.0,
+      "residual_actual_minus_predicted": 635.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-06",
+      "model": "seasonal_naive",
+      "actual_cases": 2247.0,
+      "predicted_cases": 1942.0,
+      "residual_actual_minus_predicted": 305.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-07",
+      "model": "seasonal_naive",
+      "actual_cases": 3863.0,
+      "predicted_cases": 3080.0,
+      "residual_actual_minus_predicted": 783.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-08",
+      "model": "seasonal_naive",
+      "actual_cases": 3086.0,
+      "predicted_cases": 2388.0,
+      "residual_actual_minus_predicted": 698.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-09",
+      "model": "seasonal_naive",
+      "actual_cases": 2205.0,
+      "predicted_cases": 1773.0,
+      "residual_actual_minus_predicted": 432.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-10",
+      "model": "seasonal_naive",
+      "actual_cases": 1508.0,
+      "predicted_cases": 1643.0,
+      "residual_actual_minus_predicted": -135.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-11",
+      "model": "seasonal_naive",
+      "actual_cases": 999.0,
+      "predicted_cases": 2123.0,
+      "residual_actual_minus_predicted": -1124.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Dengue",
+      "classification": "Confirmed",
+      "period": "2024-12",
+      "model": "seasonal_naive",
+      "actual_cases": 916.0,
+      "predicted_cases": 2070.0,
+      "residual_actual_minus_predicted": -1154.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-01",
+      "model": "naive",
+      "actual_cases": 186.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": -96.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-02",
+      "model": "naive",
+      "actual_cases": 187.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": -95.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-03",
+      "model": "naive",
+      "actual_cases": 146.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": -136.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-04",
+      "model": "naive",
+      "actual_cases": 150.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": -132.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-05",
+      "model": "naive",
+      "actual_cases": 194.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": -88.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-06",
+      "model": "naive",
+      "actual_cases": 284.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 2.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-07",
+      "model": "naive",
+      "actual_cases": 440.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 158.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-08",
+      "model": "naive",
+      "actual_cases": 499.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 217.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-09",
+      "model": "naive",
+      "actual_cases": 409.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 127.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-10",
+      "model": "naive",
+      "actual_cases": 363.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 81.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-11",
+      "model": "naive",
+      "actual_cases": 398.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 116.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-12",
+      "model": "naive",
+      "actual_cases": 296.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 14.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-01",
+      "model": "seasonal_naive",
+      "actual_cases": 186.0,
+      "predicted_cases": 129.0,
+      "residual_actual_minus_predicted": 57.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-02",
+      "model": "seasonal_naive",
+      "actual_cases": 187.0,
+      "predicted_cases": 82.0,
+      "residual_actual_minus_predicted": 105.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-03",
+      "model": "seasonal_naive",
+      "actual_cases": 146.0,
+      "predicted_cases": 80.0,
+      "residual_actual_minus_predicted": 66.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-04",
+      "model": "seasonal_naive",
+      "actual_cases": 150.0,
+      "predicted_cases": 76.0,
+      "residual_actual_minus_predicted": 74.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-05",
+      "model": "seasonal_naive",
+      "actual_cases": 194.0,
+      "predicted_cases": 69.0,
+      "residual_actual_minus_predicted": 125.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-06",
+      "model": "seasonal_naive",
+      "actual_cases": 284.0,
+      "predicted_cases": 172.0,
+      "residual_actual_minus_predicted": 112.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-07",
+      "model": "seasonal_naive",
+      "actual_cases": 440.0,
+      "predicted_cases": 352.0,
+      "residual_actual_minus_predicted": 88.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-08",
+      "model": "seasonal_naive",
+      "actual_cases": 499.0,
+      "predicted_cases": 279.0,
+      "residual_actual_minus_predicted": 220.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-09",
+      "model": "seasonal_naive",
+      "actual_cases": 409.0,
+      "predicted_cases": 213.0,
+      "residual_actual_minus_predicted": 196.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-10",
+      "model": "seasonal_naive",
+      "actual_cases": 363.0,
+      "predicted_cases": 352.0,
+      "residual_actual_minus_predicted": 11.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-11",
+      "model": "seasonal_naive",
+      "actual_cases": 398.0,
+      "predicted_cases": 331.0,
+      "residual_actual_minus_predicted": 67.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    },
+    {
+      "disease": "Leptospirosis",
+      "classification": "Confirmed",
+      "period": "2024-12",
+      "model": "seasonal_naive",
+      "actual_cases": 296.0,
+      "predicted_cases": 282.0,
+      "residual_actual_minus_predicted": 14.0,
+      "training_start": "2023-01",
+      "training_end": "2023-12",
+      "test_start": "2024-01",
+      "test_end": "2024-12"
+    }
+  ],
+  "status": "experimental_baseline_hindcast",
+  "validity_checks_passed": true,
+  "future_forecasts_available": false,
+  "climate_features_improved_performance": null,
+  "climate_feature_comparison_status": "Not evaluated; insufficient compatible training history and future climate availability."
+}

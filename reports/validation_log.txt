@@ -1,0 +1,33 @@
+CareGrid Sentinel — district annual data curation validation
+Source workbooks: uploaded Districtwise Disease Cases and Districtwise Disease Death files
+Dataset: 2020–2024 annual district panel
+Rows expected and produced: 280 / 280
+Summary rows expected and produced: 20 / 20
+Unique districts: 14
+Years: 2020–2024
+All district case/death values present for target records: True
+
+District-sum totals (cases/deaths) by year, disease, classification:
+2020 | Dengue         | Confirmed |   2723 cases /  22 deaths | 14 districts
+2020 | Dengue         | Probable  |  12042 cases /  16 deaths | 14 districts
+2020 | Leptospirosis  | Confirmed |   1039 cases /  48 deaths | 14 districts
+2020 | Leptospirosis  | Probable  |   1872 cases / 143 deaths | 14 districts
+2021 | Dengue         | Confirmed |   3261 cases /  27 deaths | 14 districts
+2021 | Dengue         | Probable  |   9878 cases /   4 deaths | 14 districts
+2021 | Leptospirosis  | Confirmed |   1745 cases /  97 deaths | 14 districts
+2021 | Leptospirosis  | Probable  |   2565 cases / 250 deaths | 14 districts
+2022 | Dengue         | Confirmed |   4468 cases /  58 deaths | 14 districts
+2022 | Dengue         | Probable  |  13355 cases /  11 deaths | 14 districts
+2022 | Leptospirosis  | Confirmed |   2482 cases / 121 deaths | 14 districts
+2022 | Leptospirosis  | Probable  |   2833 cases / 169 deaths | 14 districts
+2023 | Dengue         | Confirmed |  16766 cases / 153 deaths | 14 districts
+2023 | Dengue         | Probable  |  41599 cases /  12 deaths | 14 districts
+2023 | Leptospirosis  | Confirmed |   2417 cases / 133 deaths | 14 districts
+2023 | Leptospirosis  | Probable  |   2769 cases / 149 deaths | 14 districts
+2024 | Dengue         | Confirmed |  20674 cases / 128 deaths | 14 districts
+2024 | Dengue         | Probable  |  53536 cases /  13 deaths | 14 districts
+2024 | Leptospirosis  | Confirmed |   3552 cases / 251 deaths | 14 districts
+2024 | Leptospirosis  | Probable  |   2428 cases / 143 deaths | 14 districts
+
+Caution: Annual district totals are not monthly district observations and should not be used to claim monthly climate-lag forecast skill.
+Data caveat: CD DEATH_2024 title cell says 2021; source_header_note records the mismatch.

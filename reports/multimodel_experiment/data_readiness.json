@@ -1,0 +1,54 @@
+{
+  "confirmed_panel": {
+    "status": "ready_for_exploratory_retrospective_comparison",
+    "rows_per_disease": {
+      "Dengue": 1680,
+      "Leptospirosis": 1680
+    },
+    "months_per_district_disease": 120,
+    "zero_cases": 224,
+    "missing_cases": 0,
+    "district_to_state_case_mismatch_rows": 28,
+    "district_to_state_case_mismatch_cells": 2,
+    "all_classification_mismatch_cells": 4
+  },
+  "climate_panel": {
+    "status": "complete_historical_representative_location_panel",
+    "matched_disease_rows": 3360,
+    "features": [
+      "precipitation_sum_mm",
+      "temperature_2m_mean_c",
+      "temperature_2m_min_c",
+      "temperature_2m_max_c",
+      "relative_humidity_2m_mean_pct",
+      "dew_point_2m_mean_c"
+    ],
+    "spatial_limitation": "One API grid point per district representative location, not an areal district weather average.",
+    "forecast_origin_limitation": "Forecast-time climate features are frozen at the latest observation available at each origin; realized future weather is not used."
+  },
+  "provenance": {
+    "disease_candidate_path": "data\\candidates\\kerala_district_monthly_disease_dashboard_2016_2025.csv",
+    "disease_candidate_sha256": "283c202f132261b77f86710c32649f6102ce258e0cc54eaadd83d4fd808c0f23",
+    "disease_source_sha256": "ca401184db2f983030d3fd26eb94872aa3cc61f6be340067aef1e362bdd2101c",
+    "disease_metadata_path": "data\\candidates\\kerala_district_monthly_disease_dashboard_2016_2025.metadata.json",
+    "disease_metadata_sha256": "c47ee93a29974f72bd648088a8fe1d98ea49826a2f8fd3c9e5584192ccd9083c",
+    "reconciliation_path": "data\\candidates\\kerala_district_monthly_disease_dashboard_2016_2025_reconciliation.csv",
+    "reconciliation_sha256": "be1527ecb468f0bfa811314605b3c2835af6b8e4fa149cc055393e6a599c7486",
+    "weather_candidate_path": "data\\candidates\\kerala_district_representative_weather_monthly_2016_2025.csv",
+    "weather_candidate_sha256": "85364a93b25a741b2eaf5080f958fee764ac557821e03fe1e663e7c73518e175",
+    "weather_metadata_path": "data\\candidates\\kerala_district_representative_weather_monthly_2016_2025.metadata.json",
+    "weather_metadata_sha256": "96f314cb557046d50df3990d8acaa9967a974a1c67ec26592fd19129ca049cc8",
+    "weather_source_batch_sha256": "45f64f3278afb4b7f8eb4842deef58f8bb921c174352952fce519ef040107ecc",
+    "confirmed_rows": 3360,
+    "district_count": 14,
+    "period_count": 120,
+    "confirmed_missing_cases": 0,
+    "confirmed_zero_cases": 224,
+    "reconciliation_flagged_confirmed_rows": 28,
+    "reconciliation_mismatch_cells": 4,
+    "confirmed_reconciliation_mismatch_cells": 2,
+    "weather_matched_rows": 3360,
+    "classification_note": "Dashboard Confirmed only; no mapping to DHS categories. Historical semantic consistency remains unverified.",
+    "climate_forecast_note": "Climate features for each target month are constructed only from data available through the forecast origin."
+  }
+}

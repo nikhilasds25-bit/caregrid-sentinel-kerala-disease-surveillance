@@ -1,0 +1,21 @@
+﻿year,disease,classification,district_sum_cases,district_sum_deaths,district_count,case_source_sheet,death_source_sheet,source_header_note
+2020,Dengue,Confirmed,2723,22,14,CD CASES_2020,CD DEATH_2020,
+2020,Dengue,Probable,12042,16,14,CD CASES_2020,CD DEATH_2020,
+2020,Leptospirosis,Confirmed,1039,48,14,CD CASES_2020,CD DEATH_2020,
+2020,Leptospirosis,Probable,1872,143,14,CD CASES_2020,CD DEATH_2020,
+2021,Dengue,Confirmed,3261,27,14,CD CASES_2021,CD DEATH_2021,
+2021,Dengue,Probable,9878,4,14,CD CASES_2021,CD DEATH_2021,
+2021,Leptospirosis,Confirmed,1745,97,14,CD CASES_2021,CD DEATH_2021,
+2021,Leptospirosis,Probable,2565,250,14,CD CASES_2021,CD DEATH_2021,
+2022,Dengue,Confirmed,4468,58,14,CD CASES_2022,CD DEATH_2022,
+2022,Dengue,Probable,13355,11,14,CD CASES_2022,CD DEATH_2022,
+2022,Leptospirosis,Confirmed,2482,121,14,CD CASES_2022,CD DEATH_2022,
+2022,Leptospirosis,Probable,2833,169,14,CD CASES_2022,CD DEATH_2022,
+2023,Dengue,Confirmed,16766,153,14,CD CASES_2023,CD DEATH_2023,
+2023,Dengue,Probable,41599,12,14,CD CASES_2023,CD DEATH_2023,
+2023,Leptospirosis,Confirmed,2417,133,14,CD CASES_2023,CD DEATH_2023,
+2023,Leptospirosis,Probable,2769,149,14,CD CASES_2023,CD DEATH_2023,
+2024,Dengue,Confirmed,20674,128,14,CD CASES_2024,CD DEATH_2024,"Source sheet is CD DEATH_2024, but the title cell incorrectly reads 'Number of Death 2021'; year assigned from sheet name."
+2024,Dengue,Probable,53536,13,14,CD CASES_2024,CD DEATH_2024,"Source sheet is CD DEATH_2024, but the title cell incorrectly reads 'Number of Death 2021'; year assigned from sheet name."
+2024,Leptospirosis,Confirmed,3552,251,14,CD CASES_2024,CD DEATH_2024,"Source sheet is CD DEATH_2024, but the title cell incorrectly reads 'Number of Death 2021'; year assigned from sheet name."
+2024,Leptospirosis,Probable,2428,143,14,CD CASES_2024,CD DEATH_2024,"Source sheet is CD DEATH_2024, but the title cell incorrectly reads 'Number of Death 2021'; year assigned from sheet name."

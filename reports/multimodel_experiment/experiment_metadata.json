@@ -1,0 +1,26 @@
+{
+  "experiment_name": "kerala_confirmed_district_monthly_forecast_comparison",
+  "experiment_version": "1.0.0",
+  "classification": "Dashboard Confirmed",
+  "input_hashes": {
+    "disease_candidate_sha256": "283c202f132261b77f86710c32649f6102ce258e0cc54eaadd83d4fd808c0f23",
+    "disease_source_sha256": "ca401184db2f983030d3fd26eb94872aa3cc61f6be340067aef1e362bdd2101c",
+    "reconciliation_sha256": "be1527ecb468f0bfa811314605b3c2835af6b8e4fa149cc055393e6a599c7486",
+    "weather_candidate_sha256": "85364a93b25a741b2eaf5080f958fee764ac557821e03fe1e663e7c73518e175",
+    "weather_source_batch_sha256": "45f64f3278afb4b7f8eb4842deef58f8bb921c174352952fce519ef040107ecc"
+  },
+  "forecast_horizon_months": 12,
+  "rolling_validation_origins": [
+    "2018-12",
+    "2019-12",
+    "2020-12",
+    "2021-12",
+    "2022-12",
+    "2023-12"
+  ],
+  "final_origin": "2024-12",
+  "random_split": false,
+  "weather_origin_rule": "Freeze observed weather features as of each forecast origin.",
+  "exploratory_only": true,
+  "disease_definition_consistency_established": false
+}

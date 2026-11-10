@@ -1,0 +1,5 @@
+disease,classification,model,mae,rmse,mase,test_observations,training_observations,training_start,training_end,test_start,test_end,mase_note
+Dengue,Confirmed,naive,867.3333333333334,987.8264017528586,,12,12,2023-01,2023-12,2024-01,2024-12,Seasonal MASE is undefined: training has no pairs 12 months apart.
+Dengue,Confirmed,seasonal_naive,727.8333333333334,805.0048654097275,,12,12,2023-01,2023-12,2024-01,2024-12,Seasonal MASE is undefined: training has no pairs 12 months apart.
+Leptospirosis,Confirmed,naive,105.16666666666667,119.13018089468345,,12,12,2023-01,2023-12,2024-01,2024-12,Seasonal MASE is undefined: training has no pairs 12 months apart.
+Leptospirosis,Confirmed,seasonal_naive,94.58333333333333,112.41329992487543,,12,12,2023-01,2023-12,2024-01,2024-12,Seasonal MASE is undefined: training has no pairs 12 months apart.

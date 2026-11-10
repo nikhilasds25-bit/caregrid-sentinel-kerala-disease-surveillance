@@ -1,0 +1,48 @@
+{
+  "experiment_generated_at_utc": "2026-11-02T17:31:07+00:00",
+  "target": "statewide monthly reported cases",
+  "dataset": "data/processed/kerala_disease_monthly_2021_2024.csv",
+  "source_sha256": "74a77ef823363bf540e2ed1579765f50bb59bf10eed0e9c48526c01658e755f3",
+  "weather_source_sha256": "af0c03f943725ddd7ea14dd2daf20f1a267fb32567c85f61e8f612e81fe25b2d",
+  "columns": [
+    "period",
+    "disease",
+    "classification",
+    "classification_note",
+    "cases",
+    "source_label",
+    "source_file",
+    "source_page",
+    "source_url"
+  ],
+  "diseases": [
+    "Dengue",
+    "Leptospirosis"
+  ],
+  "classification": "Confirmed",
+  "training_period": [
+    "2023-01",
+    "2023-12"
+  ],
+  "test_period": [
+    "2024-01",
+    "2024-12"
+  ],
+  "baselines": {
+    "naive": "Repeat the final observed training value for each test month.",
+    "seasonal_naive": "Repeat the corresponding month from the latest complete training year."
+  },
+  "seasonality": 12,
+  "metric_scaling": "Seasonal MASE denominator uses training pairs separated by 12 months.",
+  "preprocessing_fit_scope": "No data-fitted preprocessing.",
+  "climate_features_in_model": false,
+  "operational_forecasting_available": false,
+  "validity_gate": "Complete unique monthly Confirmed observations spanning Jan 2023-Dec 2024, 12 train and 12 test months, and one consistent classification note.",
+  "figures": [
+    "reports/figures/forecasting_dengue_actual_vs_predicted.png",
+    "reports/figures/forecasting_dengue_residuals.png",
+    "reports/figures/forecasting_leptospirosis_actual_vs_predicted.png",
+    "reports/figures/forecasting_leptospirosis_residuals.png",
+    "reports/figures/forecasting_baseline_error_comparison.png"
+  ]
+}

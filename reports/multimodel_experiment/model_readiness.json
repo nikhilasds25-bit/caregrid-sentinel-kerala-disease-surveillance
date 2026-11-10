@@ -1,0 +1,62 @@
+[
+  {
+    "model_name": "seasonal_naive",
+    "model_version": "1.0",
+    "status": "evaluated",
+    "reason": "Same-month previous-year benchmark; intervals use training-only pooled seasonal residuals.",
+    "task": "count_forecasting",
+    "requirements": [
+      "At least 12 training months",
+      "Same source category across the training series"
+    ],
+    "limitations": [
+      "Empirical interval distribution; predictive log score unavailable."
+    ]
+  },
+  {
+    "model_name": "poisson_regression",
+    "model_version": "1.0",
+    "status": "evaluated",
+    "reason": "Regularized pooled Poisson count regression with district and month effects.",
+    "task": "count_forecasting",
+    "requirements": [
+      "Non-negative integer count target",
+      "Training-only lagged features"
+    ],
+    "limitations": [
+      "Common dispersion assumption; estimated means may be overdispersed."
+    ]
+  },
+  {
+    "model_name": "negative_binomial_regression",
+    "model_version": "1.0",
+    "status": "evaluated",
+    "reason": "Regularized pooled NB2 likelihood with jointly estimated dispersion.",
+    "task": "count_forecasting",
+    "requirements": [
+      "Non-negative integer count target",
+      "Training-only lagged features"
+    ],
+    "limitations": [
+      "Fixed-effect pooling, not a Bayesian hierarchical model."
+    ]
+  },
+  {
+    "model_name": "hierarchical_bayesian_negative_binomial",
+    "model_version": null,
+    "status": "unavailable",
+    "reason": "PyMC/Stan are not installed; no Bayesian sampler is available to produce posterior convergence and effective-sample diagnostics.",
+    "task": "count_forecasting",
+    "requirements": [
+      "Regularizing priors",
+      "Multiple chains",
+      "R-hat",
+      "effective sample size",
+      "Divergence checks",
+      "Prior/posterior predictive checks"
+    ],
+    "limitations": [
+      "No posterior samples or Bayesian performance claims are produced."
+    ]
+  }
+]

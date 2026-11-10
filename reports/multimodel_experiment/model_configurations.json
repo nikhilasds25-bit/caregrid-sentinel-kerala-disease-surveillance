@@ -1,0 +1,84 @@
+[
+  {
+    "model_name": "seasonal_naive",
+    "model_version": "1.0",
+    "feature_set": "disease_history",
+    "parameters": {
+      "residual_years": 3
+    },
+    "features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_cases"
+    ]
+  },
+  {
+    "model_name": "poisson_regression",
+    "model_version": "1.0",
+    "feature_set": "disease_history",
+    "parameters": {
+      "alpha": 0.1
+    },
+    "features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_cases"
+    ]
+  },
+  {
+    "model_name": "negative_binomial_regression",
+    "model_version": "1.0",
+    "feature_set": "disease_history",
+    "parameters": {
+      "ridge_alpha": 0.1
+    },
+    "features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_cases"
+    ]
+  },
+  {
+    "model_name": "poisson_regression",
+    "model_version": "1.0",
+    "feature_set": "disease_history_and_climate",
+    "parameters": {
+      "alpha": 0.1
+    },
+    "features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_cases",
+      "previous_month_rainfall",
+      "preceding_3_month_rainfall_sum",
+      "previous_month_mean_temperature",
+      "previous_month_temperature_range",
+      "previous_month_relative_humidity",
+      "previous_month_dew_point"
+    ]
+  },
+  {
+    "model_name": "negative_binomial_regression",
+    "model_version": "1.0",
+    "feature_set": "disease_history_and_climate",
+    "parameters": {
+      "ridge_alpha": 0.1
+    },
+    "features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_cases",
+      "previous_month_rainfall",
+      "preceding_3_month_rainfall_sum",
+      "previous_month_mean_temperature",
+      "previous_month_temperature_range",
+      "previous_month_relative_humidity",
+      "previous_month_dew_point"
+    ]
+  }
+]

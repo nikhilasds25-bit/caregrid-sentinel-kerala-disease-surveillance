@@ -1,0 +1,363 @@
+{
+  "seasonal_naive::disease_history": {
+    "model_id": "seasonal_naive::disease_history",
+    "model_name": "seasonal_naive",
+    "version": "1.0",
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [
+      "district",
+      "same_month_previous_year_cases"
+    ],
+    "training_requirements": [
+      "At least 24 consecutive monthly observations per district",
+      "Same source-native classification throughout training"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "PredictiveOutput; mean and empirical residual intervals",
+    "predictive_uncertainty": "empirical_prediction_intervals; log score unavailable",
+    "readiness_status": "evaluated_exploratory",
+    "failure_status": "none_in_saved_experiment",
+    "limitations": [
+      "Empirical pooled residual intervals are not distributionally calibrated."
+    ],
+    "extensions": {}
+  },
+  "poisson_regression::disease_history": {
+    "model_id": "poisson_regression::disease_history",
+    "model_name": "poisson_regression",
+    "version": "1.0",
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_confirmed_cases"
+    ],
+    "training_requirements": [
+      "Non-negative integer count response",
+      "Training-only lag features",
+      "Sufficient observations for district and monthly effects"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "PredictiveOutput; Poisson predictive distribution",
+    "predictive_uncertainty": "Poisson_distributional_prediction_intervals",
+    "readiness_status": "evaluated_exploratory",
+    "failure_status": "none_in_saved_experiment",
+    "limitations": [
+      "Poisson equidispersion may be inadequate for overdispersed counts."
+    ],
+    "extensions": {}
+  },
+  "negative_binomial_regression::disease_history": {
+    "model_id": "negative_binomial_regression::disease_history",
+    "model_name": "negative_binomial_regression",
+    "version": "1.0",
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_confirmed_cases"
+    ],
+    "training_requirements": [
+      "Non-negative integer count response",
+      "Training-only lag features",
+      "More complete training rows than design-matrix parameters"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "PredictiveOutput; NB2 predictive distribution",
+    "predictive_uncertainty": "negative_binomial_distributional_prediction_intervals",
+    "readiness_status": "evaluated_exploratory",
+    "failure_status": "none_in_saved_experiment",
+    "limitations": [
+      "Regularized pooled fixed effects; not a hierarchical Bayesian model."
+    ],
+    "extensions": {}
+  },
+  "poisson_regression::disease_history_and_climate": {
+    "model_id": "poisson_regression::disease_history_and_climate",
+    "model_name": "poisson_regression",
+    "version": "1.0",
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_confirmed_cases",
+      "previous_month_rainfall",
+      "preceding_3_month_rainfall_sum",
+      "previous_month_mean_temperature",
+      "previous_month_temperature_range",
+      "previous_month_relative_humidity",
+      "previous_month_dew_point"
+    ],
+    "training_requirements": [
+      "All history-only Poisson requirements",
+      "Complete representative-location weather for all training rows",
+      "Weather features available at forecast origin"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "PredictiveOutput; Poisson predictive distribution",
+    "predictive_uncertainty": "Poisson_distributional_prediction_intervals",
+    "readiness_status": "evaluated_exploratory",
+    "failure_status": "none_in_saved_experiment",
+    "limitations": [
+      "Weather is from one representative location per district."
+    ],
+    "extensions": {}
+  },
+  "negative_binomial_regression::disease_history_and_climate": {
+    "model_id": "negative_binomial_regression::disease_history_and_climate",
+    "model_name": "negative_binomial_regression",
+    "version": "1.0",
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [
+      "district",
+      "month_of_year",
+      "linear_trend",
+      "previous_month_confirmed_cases",
+      "previous_month_rainfall",
+      "preceding_3_month_rainfall_sum",
+      "previous_month_mean_temperature",
+      "previous_month_temperature_range",
+      "previous_month_relative_humidity",
+      "previous_month_dew_point"
+    ],
+    "training_requirements": [
+      "All history-only NB2 requirements",
+      "Complete representative-location weather for all training rows",
+      "Weather features available at forecast origin"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "PredictiveOutput; NB2 predictive distribution",
+    "predictive_uncertainty": "negative_binomial_distributional_prediction_intervals",
+    "readiness_status": "evaluated_exploratory",
+    "failure_status": "none_in_saved_experiment",
+    "limitations": [
+      "Regularized pooled fixed effects; not a hierarchical Bayesian model.",
+      "Weather is from one representative location per district."
+    ],
+    "extensions": {}
+  },
+  "bayesian_poisson::planned": {
+    "model_id": "bayesian_poisson::planned",
+    "model_name": "bayesian_poisson",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "gaussian_process::planned": {
+    "model_id": "gaussian_process::planned",
+    "model_name": "gaussian_process",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "student_t_process::planned": {
+    "model_id": "student_t_process::planned",
+    "model_name": "student_t_process",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "bayesian_structural_time_series::planned": {
+    "model_id": "bayesian_structural_time_series::planned",
+    "model_name": "bayesian_structural_time_series",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "hidden_markov_model::planned": {
+    "model_id": "hidden_markov_model::planned",
+    "model_name": "hidden_markov_model",
+    "version": null,
+    "analytical_task": "retrospective_unusual_activity_detection",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "ensemble_forecast::planned": {
+    "model_id": "ensemble_forecast::planned",
+    "model_name": "ensemble_forecast",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Task-specific input and evidence requirements not yet evaluated."
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Task-specific output contract; algorithm not implemented",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "planned_not_implemented",
+    "failure_status": "not_run",
+    "limitations": [
+      "Registered as an extension point only; no predictions or evaluation exist."
+    ],
+    "extensions": {}
+  },
+  "bayesian_negative_binomial::planned": {
+    "model_id": "bayesian_negative_binomial::planned",
+    "model_name": "bayesian_negative_binomial",
+    "version": null,
+    "analytical_task": "count_forecasting",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Regularizing priors and multiple chains",
+      "R-hat, effective-sample-size, divergence, and predictive checks"
+    ],
+    "minimum_horizon": 1,
+    "maximum_horizon": 12,
+    "prediction_output": "Posterior predictive count distribution",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "unavailable_inference_dependency",
+    "failure_status": "not_run; PyMC/Stan runtime not installed",
+    "limitations": [
+      "The saved experiment contains no Bayesian NB posterior samples or predictions.",
+      "Requires a separate posterior diagnostic pilot before model evaluation."
+    ],
+    "extensions": {}
+  },
+  "outbreak_probability::planned": {
+    "model_id": "outbreak_probability::planned",
+    "model_name": "outbreak_probability",
+    "version": null,
+    "analytical_task": "probabilistic_outbreak_threshold_exceedance",
+    "supported_diseases": [
+      "Dengue",
+      "Leptospirosis"
+    ],
+    "required_features": [],
+    "training_requirements": [
+      "Independently defined epidemiological threshold",
+      "Verified event labels and evaluation windows",
+      "Prospective availability of all predictors"
+    ],
+    "minimum_horizon": 0,
+    "maximum_horizon": 12,
+    "prediction_output": "Calibrated probability of exceeding a defined threshold",
+    "predictive_uncertainty": "not_available",
+    "readiness_status": "blocked_missing_thresholds_and_event_labels",
+    "failure_status": "not_run",
+    "limitations": [
+      "No operational outbreak alerts are supported."
+    ],
+    "extensions": {}
+  }
+}
