@@ -19,6 +19,7 @@ if str(PROJECT_ROOT / "src") not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from caregrid.multimodel.data import DISEASES, ModelDataError, load_model_ready_data
+from caregrid.multimodel.direct_model import DirectNegativeBinomialModel
 from caregrid.multimodel.metrics import calculate_metrics
 from caregrid.multimodel.models import (
     CountModelError,
@@ -55,12 +56,15 @@ def _model_scenarios() -> list[tuple[str, bool, str, dict[str, Any]]]:
             "disease_history_and_climate",
             {"ridge_alpha": 0.1},
         ),
+        ("direct_negative_binomial", False, "disease_history", {"ridge_alpha": 0.1}),
     ]
 
 
 def _new_model(name: str) -> Any:
     if name == "seasonal_naive":
         return SeasonalNaiveModel()
+    if name == "direct_negative_binomial":
+        return DirectNegativeBinomialModel(ridge_alpha=0.1)
     if name == "poisson_regression":
         return PoissonCountModel(alpha=0.1)
     if name == "negative_binomial_regression":
