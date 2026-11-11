@@ -1,0 +1,8 @@
+{
+  "method": "split conformal, relative interval score, earlier origins only",
+  "min_scores": 28,
+  "input_file": "predictions.csv",
+  "input_sha256": "46c70a4a75c65ce1b7efa535305a3dfa7aa67bc04d38ed77538b7757995aeca2",
+  "created_utc": "2026-11-11T05:46:21.416616+00:00",
+  "note": "Calibration widens or narrows intervals; it does not correct biased forecast means."
+}
