@@ -61,6 +61,7 @@ def _score_series(
     cusum_k: float,
     cusum_h: float,
     scale_floor: float,
+    baseline_years: int | None = None,
 ) -> list[dict]:
     months = [int(p[5:7]) for p in periods]
     y = np.sqrt(np.asarray(counts, dtype=float))
@@ -83,7 +84,8 @@ def _score_series(
     cusum = 0.0
     n = 0
     for i in range(in_base[-1] + 1, len(periods)):
-        prior = [y[j] for j in range(i) if months[j] == months[i]]
+        lo = 0 if baseline_years is None else max(0, i - 12 * baseline_years)
+        prior = [y[j] for j in range(lo, i) if months[j] == months[i]]
         if len(prior) < min_prior_years:
             continue
         baseline = float(np.median(prior))
@@ -126,6 +128,7 @@ class _BaseDetector:
         cusum_k: float = 0.5,
         cusum_h: float = 4.0,
         scale_floor: float = 0.5,
+        baseline_years: int | None = None,
     ) -> None:
         self._params = dict(
             min_prior_years=min_prior_years,
@@ -134,6 +137,7 @@ class _BaseDetector:
             cusum_k=cusum_k,
             cusum_h=cusum_h,
             scale_floor=scale_floor,
+            baseline_years=baseline_years,
         )
 
     def detect(
