@@ -14,9 +14,59 @@
 - Include data availability, evidence status, and limitations.
 - No model is designated operationally ready.
 
+
+## Standard API Response Structure
+
+All five versioned endpoints use this JSON envelope:
+
+    {
+      "data": [],
+      "meta": {
+        "schema_version": "1.0",
+        "generated_at": "ISO-8601 timestamp",
+        "status": "exploratory",
+        "filters": {}
+      }
+    }
+
+Requirements:
+- Observations and forecasts remain separate.
+- Forecasts identify backtest or prospective prediction type.
+- Prediction intervals disclose nominal and empirical coverage and calibration status.
+- Detection signals include method, statistic, control limit, baseline period and parameters.
+- Exceedance assessments include probability_calibration_status.
+- Missing values remain null, never zero.
+- Insufficient evidence is explicitly identified.
+- The meaning of generated_at must be documented.
+
 ## 2. Proposed Endpoints
 
-### GET /api/forecasting/backtests
+### GET /api/v1/surveillance/observations
+
+**Purpose:** Provide actual reported disease observations, separate from forecasts.
+
+Filters:
+- disease
+- district
+- reporting period range
+- classification
+
+Response:
+- data: array of observation records
+- meta: schema version, generation timestamp, status, and applied filters
+
+Each record includes:
+- disease
+- district
+- reporting_period
+- observed_count
+- classification
+- source information
+- data availability status
+
+Only actual reported observations are returned. Predictions must never appear as observed cases.
+
+### GET /api/v1/forecasts
 
 **Purpose:** Display actual versus predicted disease cases.
 
@@ -46,7 +96,7 @@ Each record includes:
 
 Source: outputs/chart_data/forecast_bands.csv
 
-### GET /api/forecasting/model-comparison
+### GET /api/v1/model-comparisons
 
 **Purpose:** Compare model performance without declaring a winning model.
 
@@ -70,7 +120,7 @@ Metrics:
 
 Source: outputs/chart_data/model_comparison.csv
 
-### GET /api/surveillance/unusual-activity
+### GET /api/v1/detection/signals
 
 **Purpose:** Display retrospective EWMA/CUSUM signals.
 
@@ -99,7 +149,7 @@ Source: outputs/anomaly_chart_data/anomaly_signals.csv
 
 These flags identify exploratory statistical deviations, not confirmed outbreaks.
 
-### GET /api/surveillance/exceedance
+### GET /api/v1/exceedance/assessments
 
 **Purpose:** Display exploratory historical threshold-exceedance probabilities.
 
