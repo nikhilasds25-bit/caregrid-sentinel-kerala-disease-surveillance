@@ -36,6 +36,7 @@ from caregrid.surveillance import (
     trend_records,
 )
 from caregrid.forecasting import ForecastExperimentError, load_experiment_artifact
+from caregrid.analytical_api import router as analytical_router
 
 
 app = FastAPI(
@@ -47,6 +48,8 @@ app = FastAPI(
     ),
 )
 
+
+app.include_router(analytical_router)
 
 def repository() -> DataRepository:
     try:

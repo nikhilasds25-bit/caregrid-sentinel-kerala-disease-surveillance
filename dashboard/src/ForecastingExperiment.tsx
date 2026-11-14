@@ -1,3 +1,4 @@
+import AnalyticalDashboard from "./AnalyticalDashboard";
 import { useEffect, useMemo, useState } from "react";
 import { apiGet, type Disease } from "./api";
 import {
@@ -287,6 +288,7 @@ export default function ForecastingExperimentPage() {
           </Notice>
         </>
       )}
+      <AnalyticalDashboard />
     </>
   );
 }
