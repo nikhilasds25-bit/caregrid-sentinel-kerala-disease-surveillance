@@ -1,0 +1,7 @@
+{
+  "model": "direct_negative_binomial",
+  "source": "disposable Temp copy run of run_multimodel_experiment.py",
+  "source_predictions_sha256": "91203608ff6c6536380977693a7960c03ef42c3a997f95da196862f354860082",
+  "created_utc": "2026-11-11T06:38:41.258147+00:00",
+  "note": "History-only direct NB2. Changes both recursion and lag structure; not proven to be better. 2025 holdout not used for any choice."
+}

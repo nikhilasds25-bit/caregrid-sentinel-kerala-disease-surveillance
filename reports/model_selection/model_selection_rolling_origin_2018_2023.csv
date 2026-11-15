@@ -1,0 +1,13 @@
+disease,model_name,feature_set,rows,mae,coverage_80,coverage_95,width_80,mae_rank_within_disease
+Dengue,seasonal_naive,disease_history,1008,39.014,0.786,0.918,75.209,1
+Dengue,direct_negative_binomial,disease_history,1008,39.766,0.678,0.827,75.708,2
+Dengue,negative_binomial_regression,disease_history,1008,40.928,0.601,0.776,66.994,3
+Dengue,negative_binomial_regression,disease_history_and_climate,1008,47.601,0.554,0.73,82.702,4
+Dengue,poisson_regression,disease_history_and_climate,1008,51.667,0.284,0.364,14.086,5
+Dengue,poisson_regression,disease_history,1008,52.418,0.279,0.378,14.465,6
+Leptospirosis,poisson_regression,disease_history,1008,8.429,0.476,0.614,7.198,1
+Leptospirosis,direct_negative_binomial,disease_history,1008,8.535,0.836,0.94,25.183,2
+Leptospirosis,negative_binomial_regression,disease_history_and_climate,1008,8.607,0.624,0.759,14.09,3
+Leptospirosis,seasonal_naive,disease_history,1008,8.894,0.758,0.934,18.469,4
+Leptospirosis,poisson_regression,disease_history_and_climate,1008,9.344,0.375,0.467,4.395,5
+Leptospirosis,negative_binomial_regression,disease_history,1008,9.783,0.781,0.928,25.888,6
