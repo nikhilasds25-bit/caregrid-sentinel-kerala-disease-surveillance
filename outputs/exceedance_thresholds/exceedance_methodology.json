@@ -1,0 +1,62 @@
+{
+  "label": "exploratory_statistical_threshold_not_an_outbreak_definition",
+  "calibration_status": "uncalibrated_exploratory",
+  "interpretation": "Exploratory statistical thresholds. Not official outbreak definitions. An exceedance is not a confirmed outbreak.",
+  "target_definition": "Observed monthly Confirmed case count STRICTLY GREATER than the district- and disease-specific threshold.",
+  "methods": {
+    "exploratory_q90_all_months_v1": "90th percentile (numpy linear) of all monthly Confirmed counts for the district/disease with period <= origin.",
+    "exploratory_q90_season_window_v1": "90th percentile (numpy linear) of Confirmed counts in the target calendar month +/- 1 month (circular), period <= origin. Sensitivity analysis for seasonality."
+  },
+  "parameters": {
+    "quantile": 0.9,
+    "season_half_width": 1,
+    "min_values_all_months": 24,
+    "min_values_season_window": 20
+  },
+  "reference_period_rule": "Each origin uses observations from 2016-01 to the origin month only (no future data). Origin 2024-12 is used for the 2025 holdout.",
+  "origins": [
+    "2018-12",
+    "2019-12",
+    "2020-12",
+    "2021-12",
+    "2022-12",
+    "2023-12",
+    "2024-12"
+  ],
+  "draw_probability": "Share of the 200 approximate predictive draws strictly above the threshold; resolution 0.005; draws are marginal per district-month.",
+  "inputs": {
+    "observations": {
+      "path": "data/candidates/kerala_district_monthly_disease_dashboard_2016_2025.csv",
+      "sha256": "283c202f132261b77f86710c32649f6102ce258e0cc54eaadd83d4fd808c0f23"
+    },
+    "draws": {
+      "path": "outputs/predictive_draws/draws_200.npy",
+      "sha256": "5acdf8bb38bc6096d318b8c646dbf1fe4b4f7825abd4ba64252af13f04ae2915"
+    },
+    "draw_index": {
+      "path": "outputs/predictive_draws/draw_index.csv",
+      "sha256": "b7e0adb16f5b65e59a9eb143ec4629c73745963c47d23bfbb03f2f70e838c5aa"
+    }
+  },
+  "code": {
+    "git_commit_at_run": "8a20c6d93c0e35664157da20b6f27983ebf2a7a0",
+    "modules": [
+      "src/caregrid/exceedance.py",
+      "src/caregrid/run_exceedance_analysis.py"
+    ]
+  },
+  "environment": {
+    "python": "3.13.6",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1"
+  },
+  "row_counts": {
+    "thresholds": 4704,
+    "scored_rows": 9408,
+    "scored_rows_with_threshold": 6720
+  },
+  "known_limitations": [
+    "Only 6 development origins and one 2025 holdout; no labelled outbreaks; thresholds not validated.",
+    "Counts are non-stationary between years, so an out-of-sample Q90 exceedance rate is not 10%."
+  ]
+}
