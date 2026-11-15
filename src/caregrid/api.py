@@ -1,6 +1,7 @@
 """FastAPI endpoints for the validated, read-only CareGrid datasets."""
 from __future__ import annotations
 
+import os
 from pathlib import Path
 from typing import Literal
 
@@ -36,6 +37,7 @@ from caregrid.surveillance import (
     trend_records,
 )
 from caregrid.forecasting import ForecastExperimentError, load_experiment_artifact
+from caregrid.analytical_api import router as analytical_router
 
 
 app = FastAPI(
@@ -47,6 +49,28 @@ app = FastAPI(
     ),
 )
 
+
+
+# Allow explicitly configured frontend origins for separate deployments.
+# Example: CORS_ORIGINS=https://your-dashboard.vercel.app
+cors_origins = [
+    origin.strip().rstrip("/")
+    for origin in os.getenv("CORS_ORIGINS", "").split(",")
+    if origin.strip()
+]
+
+if cors_origins:
+    from fastapi.middleware.cors import CORSMiddleware
+
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=cors_origins,
+        allow_credentials=False,
+        allow_methods=["GET"],
+        allow_headers=["Accept", "Content-Type"],
+    )
+
+app.include_router(analytical_router)
 
 def repository() -> DataRepository:
     try:

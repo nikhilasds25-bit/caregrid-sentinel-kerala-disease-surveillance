@@ -1,221 +1,213 @@
-# CareGrid Sentinel — Person 3 API Contract Proposal
+# CareGrid Sentinel — Analytical API Contract
 
-**Status:** DRAFT — Awaiting Person 1 approval  
-**Scope:** Exploratory retrospective forecasting, unusual-activity detection, and threshold-exceedance analysis.
+**Status:** Implemented in PR #3; integration and deployment validation pending.
+
+**Scope:** Read-only access to retrospective forecasting, model comparison, unusual-activity detection, threshold exceedance, and reported disease observations.
 
 ## 1. General Requirements
 
-- All endpoints are read-only.
-- Results are exploratory and not operational public-health alerts.
-- Distinguish historical observations, retrospective predictions, and future forecasts.
-- The current analysis contains backtests, not future forecasts.
-- Keep the 2025 holdout separate from development results.
-- Do not replace missing values with zero.
-- Include data availability, evidence status, and limitations.
-- No model is designated operationally ready.
+- All endpoints are read-only and exploratory.
+- Historical observations and model-generated predictions remain separate.
+- Retrospective predictions must not be presented as future forecasts.
+- EWMA/CUSUM signals are not confirmed outbreak alerts.
+- Q90 thresholds are statistical, not epidemiologically validated.
+- Exceedance probabilities are not validated outbreak probabilities.
+- Missing values remain null rather than being replaced with zero.
+- No forecasting model is designated operationally ready.
+- The 2025 holdout must remain separate from development and model-selection results.
 
+## 2. Standard Response Structure
 
-## Standard API Response Structure
+All five endpoints return:
 
-All five versioned endpoints use this JSON envelope:
+```json
+{
+  "data": [],
+  "meta": {
+    "schema_version": "1.0",
+    "generated_at": "ISO-8601 timestamp",
+    "status": "exploratory",
+    "filters": {},
+    "limitations": []
+  }
+}
+```
 
-    {
-      "data": [],
-      "meta": {
-        "schema_version": "1.0",
-        "generated_at": "ISO-8601 timestamp",
-        "status": "exploratory",
-        "filters": {}
-      }
-    }
+`generated_at` indicates when the API response was created, not when the underlying analytical results were generated.
 
-Requirements:
-- Observations and forecasts remain separate.
-- Forecasts identify backtest or prospective prediction type.
-- Prediction intervals disclose nominal and empirical coverage and calibration status.
-- Detection signals include method, statistic, control limit, baseline period and parameters.
-- Exceedance assessments include probability_calibration_status.
-- Missing values remain null, never zero.
-- Insufficient evidence is explicitly identified.
-- The meaning of generated_at must be documented.
+The observations endpoint additionally provides `geographic_granularity` in metadata.
 
-## 2. Proposed Endpoints
+## 3. Implemented Endpoints
 
 ### GET /api/v1/surveillance/observations
 
-**Purpose:** Provide actual reported disease observations, separate from forecasts.
+Returns reported observations, not model-generated predictions.
 
-Filters:
-- disease
-- district
-- reporting period range
-- classification
+Supported filters:
+- `source`: `curated` (default) or `district_dashboard`
+- `disease`
+- `district`
+- `classification`
+- `granularity`: monthly or annual
+- `year`: 2020–2024
 
-Response:
-- data: array of observation records
-- meta: schema version, generation timestamp, status, and applied filters
+**Curated source:** Preserves the existing statewide monthly and district-level annual observations.
 
-Each record includes:
-- disease
-- district
-- reporting_period
-- observed_count
-- classification
-- source information
-- data availability status
+**District dashboard source:** Provides available monthly Confirmed district-level observations from the Kerala Health Department dashboard dataset (2016–2025). These records support retrospective actual-versus-predicted chart comparisons.
 
-Only actual reported observations are returned. Predictions must never appear as observed cases.
+District dashboard observations use the same `data` and `meta` response envelope, with source information recorded in metadata. Unavailable observations are excluded rather than replaced with zero.
+
+The `year` filter currently accepts 2020–2024 even though the district dashboard source covers 2016–2025.
+
+Monthly observations are statewide and cover available months in 2021–2024.
+
+Annual observations provide district-level records for 2020–2024.
+
+District filtering is unavailable for monthly observations and returns HTTP 422.
+
+Records include `observed_count`, `reporting_period`, `temporal_granularity`, and `observation_type`.
+
+Source classifications are preserved.
 
 ### GET /api/v1/forecasts
 
-**Purpose:** Display actual versus predicted disease cases.
+Returns exploratory retrospective forecasting results.
 
-Filters:
-- disease
-- district
-- model_name
-- feature_set
-- origin_period
-- validation_phase
+Supported filters:
+- `disease`
+- `district`
+- `model_name`
+- `validation_phase`
 
-Response:
-- status
-- evidence_role
-- filters
-- records
-- limitations
+Source: `outputs/chart_data/forecast_bands.csv`
 
-Each record includes:
-- disease, district
-- origin_period, target_period, horizon
-- actual, predictive_mean
-- original 80% and 95% prediction intervals
-- calibrated intervals where available
-- display interval bounds and their sources
-- uncertainty caution flags
+Records include model identifiers, feature sets, forecast origins, target periods, horizons, predicted means, original and calibrated prediction intervals, display intervals, interval sources, and uncertainty caution flags.
 
-Source: outputs/chart_data/forecast_bands.csv
+Each response record has `prediction_type` set to `backtest`.
+
+The source CSV's `actual` column is excluded from API responses.
 
 ### GET /api/v1/model-comparisons
 
-**Purpose:** Compare model performance without declaring a winning model.
+Returns retrospective model evaluation results without identifying an operationally approved model.
 
-Filters:
-- disease
-- evidence_role
-- horizon_scope
+Supported filters:
+- `disease`
+- `evidence_role`
+- `horizon_scope`
 
-Response:
-- status
-- filters
-- records
-- limitations
+Source: `outputs/chart_data/model_comparison.csv`
 
-Metrics:
+Metrics include:
 - MAE and RMSE
-- Original and display interval coverage
-- Prediction interval widths
-- Calibration availability
+- Original and display prediction-interval coverage
+- Prediction-interval widths
+- Calibration share
+- Forecast counts
 - Model and uncertainty caution flags
-
-Source: outputs/chart_data/model_comparison.csv
 
 ### GET /api/v1/detection/signals
 
-**Purpose:** Display retrospective EWMA/CUSUM signals.
+Returns exploratory retrospective unusual-activity signals.
 
-Filters:
-- disease
-- district
-- detector_id
-- period range
+Supported filters:
+- `disease`
+- `district`
+- `detector_id`
 
-Response:
-- status
-- evidence_role
-- filters
-- records
-- limitations
+Source: `outputs/anomaly_chart_data/anomaly_signals.csv`
 
-Each record includes:
-- detector_id
-- disease, district, period
-- observed_count
-- baseline
-- anomaly_score
-- unusual_activity_flag
+Records include:
+- Detector identifier
+- Disease and district
+- Reporting period
+- Observed count
+- Baseline
+- Anomaly score
+- Unusual-activity flag
+- Evidence role and signal status/type
 
-Source: outputs/anomaly_chart_data/anomaly_signals.csv
+The current dataset does not expose detector control limits or parameter configurations.
 
-These flags identify exploratory statistical deviations, not confirmed outbreaks.
+Signals do not establish confirmed disease outbreaks.
 
 ### GET /api/v1/exceedance/assessments
 
-**Purpose:** Display exploratory historical threshold-exceedance probabilities.
+Returns exploratory historical statistical threshold-exceedance assessments.
 
-Filters:
-- disease
-- district
-- model_name
-- method
-- validation_phase
-- origin_period
+Supported filters:
+- `disease`
+- `district`
+- `model_name`
 
-Response:
-- status
-- evidence_role
-- filters
-- records
-- limitations
+Source: `outputs/exceedance_chart_data/exceedance_chart_data.csv`
 
-Each record includes:
-- disease, district
-- origin_period, target_period
-- model_name
-- threshold_definition_id
-- threshold
-- observed_exceedance
-- predicted_probability
-- calibration_status
-- status
+Records include:
+- Disease, district, and model
+- Validation phase and forecast origin
+- Target period and horizon
+- Predictive mean
+- Exceedance method and threshold definition
+- Reference period and reference sample size
+- Statistical threshold
+- Predicted exceedance probability
+- Observed exceedance indicator
+- Calibration status
+- Evidence role and exploratory label
 
-Source: outputs/exceedance_chart_data/exceedance_chart_data.csv
+The source CSV's `actual` column is excluded from API responses.
 
-Probabilities are uncalibrated and do not represent validated outbreak probabilities.
+These probabilities have not been validated as calibrated outbreak probabilities.
 
-## 3. Error Handling
+## 4. Error Handling
 
-- HTTP 422: Invalid filter values.
-- HTTP 503: Required dataset missing or structurally invalid.
-- HTTP 200 with empty records: Valid filters but no matching observations.
-- Missing values remain null in JSON responses.
-- Insufficient evidence is explicitly identified.
-- Never substitute fabricated or zero-filled data.
+- HTTP 422: Invalid supported filter values or incompatible observation granularity.
+- HTTP 503: Required dataset unavailable or unreadable.
+- HTTP 200 with empty `data`: Valid request with no matching records.
+- Missing values should remain JSON null.
 
-## 4. Data and Reproducibility
+Not all filter values currently have explicit validation. Further validation and response-schema enforcement remain integration tasks.
 
-- Generated datasets remain separate from curated surveillance data.
-- Record input/output hashes and methodology versions.
-- Confirm whether generated CSV/JSON files should be committed or regenerated.
-- Do not expose experimental model selections as operational defaults.
-- Preserve data-source status and uncertainty limitations.
+## 5. Data Provenance and Reproducibility
 
-## 5. Deployment Considerations
+Analytical outputs are generated from versioned project inputs.
 
-- Frontend: React, TypeScript, Vite.
-- Backend: FastAPI.
-- Proposed deployment target: Vercel.
-- Deployment architecture requires team approval.
-- Confirm how generated datasets will be available in production.
-- Avoid performing model training or expensive simulations during API requests.
+Prepared datasets are read from disk at request time. Model training and expensive simulations are not executed by API endpoints.
 
-## 6. Pending Person 1 Decisions
+Generation scripts and analytical methodology are maintained in PR #2.
 
-1. Approve or revise endpoint names and response structures.
-2. Confirm which generated artifacts should be version-controlled.
-3. Confirm branch and PR integration sequence.
-4. Confirm whether validated outbreak thresholds or labels are available.
-5. Confirm frontend/backend hosting arrangements for Vercel.
-6. Confirm required source, model, uncertainty, and epidemiological review gates before dashboard integration.
+The production deployment must make the required analytical CSV files available through reproducible preparation or an approved artifact-distribution method.
 
-**This document is a proposal, not an implemented API contract.**
+Large intermediate simulation outputs should not be committed solely to support API requests.
+
+Input/output hashes and methodology metadata should accompany generated results where available.
+
+## 6. Deployment Architecture
+
+Agreed deployment approach:
+- Frontend: React/TypeScript/Vite on Vercel.
+- Backend: FastAPI on Render or Railway.
+- Frontend backend URL: `VITE_API_BASE_URL`.
+- Approved browser origins: `CORS_ORIGINS`.
+
+The deployment owner is responsible for production services, environment configuration, and final integration.
+
+## 7. Remaining Integration Work
+
+1. Merge PR #2 into the forecasting branch.
+2. Merge the combined forecasting branch through PR #1.
+3. Update PR #3 with the merged analytical generation code.
+4. Prepare analytical datasets reproducibly for backend deployment.
+5. Verify source availability, filtering, data provenance, and response schemas.
+6. Complete frontend/backend integration testing.
+7. Review and merge PR #3 into `main` after approval.
+
+## 8. Scientific Limitations
+
+The current forecasting analyses are retrospective.
+
+District-level analytical predictions must not be confused with separate statewide surveillance observations.
+
+Unusual-activity signals and Q90 exceedance assessments are exploratory statistical indicators.
+
+The system does not currently establish validated prospective outbreak-warning performance, calibrated outbreak probabilities, actual hospital occupancy, or operational hospital-capacity recommendations.

@@ -107,10 +107,14 @@ export interface Methodology {
   district_boundary_data_available: false;
 }
 
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL ?? "").replace(/\/$/, "");
+
 export async function apiGet<T>(path: string): Promise<T> {
   let response: Response;
   try {
-    response = await fetch(path, { headers: { Accept: "application/json" } });
+    response = await fetch(`${API_BASE_URL}${path}`, {
+      headers: { Accept: "application/json" },
+    });
   } catch {
     throw new Error("Cannot reach the CareGrid API. Start the FastAPI server and try again.");
   }
