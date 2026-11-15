@@ -46,7 +46,14 @@ export default function AnalyticalDashboard() {
 
     apiGet<ApiResponse<ForecastRecord>>(`/api/v1/forecasts?${params}`)
       .then((response) => {
-        if (active) setForecasts(response.data);
+        if (active) {
+          if (!Array.isArray(response?.data)) {
+            setForecasts([]);
+            setError("Forecast data is unavailable or has an unexpected response format.");
+          } else {
+            setForecasts(response.data);
+          }
+        }
       })
       .catch((err: unknown) => {
         if (active) setError(err instanceof Error ? err.message : "Unable to load forecasts.");

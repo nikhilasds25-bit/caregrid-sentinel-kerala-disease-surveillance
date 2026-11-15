@@ -38,7 +38,14 @@ export default function ModelComparison({ disease }: { disease: Disease }) {
       `/api/v1/model-comparisons?disease=${encodeURIComponent(disease)}`,
     )
       .then((response) => {
-        if (active) setRecords(response.data);
+        if (active) {
+          if (!Array.isArray(response?.data)) {
+            setRecords([]);
+            setError("Analytical data is unavailable or has an unexpected response format.");
+          } else {
+            setRecords(response.data);
+          }
+        }
       })
       .catch((err: unknown) => {
         if (active)
