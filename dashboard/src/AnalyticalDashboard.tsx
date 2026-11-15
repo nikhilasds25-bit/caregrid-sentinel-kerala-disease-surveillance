@@ -113,7 +113,22 @@ export default function AnalyticalDashboard() {
           <FilterSelect
             label="District"
             value={district}
-            options={[{ value: "Ernakulam", label: "Ernakulam" }]}
+            options={[
+              "Alappuzha",
+              "Ernakulam",
+              "Idukki",
+              "Kannur",
+              "Kasaragod",
+              "Kollam",
+              "Kottayam",
+              "Kozhikode",
+              "Malappuram",
+              "Palakkad",
+              "Pathanamthitta",
+              "Thiruvananthapuram",
+              "Thrissur",
+              "Wayanad",
+            ].map((name) => ({ value: name, label: name }))}
             onChange={setDistrict}
           />
 
