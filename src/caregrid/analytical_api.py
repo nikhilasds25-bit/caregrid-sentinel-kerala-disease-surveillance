@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 
 import pandas as pd
 from fastapi import APIRouter, HTTPException, Query
+from typing import Literal
 
 from caregrid.data_access import ROOT
 
@@ -57,7 +58,7 @@ def filter_data(frame: pd.DataFrame, filters: dict) -> pd.DataFrame:
 
 @router.get("/forecasts")
 def forecasts(
-    disease: str | None = None,
+    disease: Literal["Dengue", "Leptospirosis"] | None = None,
     district: str | None = None,
     model_name: str | None = None,
     validation_phase: str | None = None,
@@ -86,7 +87,7 @@ def forecasts(
 
 @router.get("/model-comparisons")
 def model_comparisons(
-    disease: str | None = None,
+    disease: Literal["Dengue", "Leptospirosis"] | None = None,
     evidence_role: str | None = None,
     horizon_scope: str | None = None,
 ):
@@ -108,7 +109,7 @@ def model_comparisons(
 
 @router.get("/detection/signals")
 def detection_signals(
-    disease: str | None = None,
+    disease: Literal["Dengue", "Leptospirosis"] | None = None,
     district: str | None = None,
     detector_id: str | None = None,
 ):
@@ -130,7 +131,7 @@ def detection_signals(
 
 @router.get("/exceedance/assessments")
 def exceedance_assessments(
-    disease: str | None = None,
+    disease: Literal["Dengue", "Leptospirosis"] | None = None,
     district: str | None = None,
     model_name: str | None = None,
 ):
@@ -154,7 +155,7 @@ def exceedance_assessments(
 
 @router.get("/surveillance/observations")
 def surveillance_observations(
-    disease: str | None = None,
+    disease: Literal["Dengue", "Leptospirosis"] | None = None,
     district: str | None = None,
     classification: str | None = None,
     granularity: str = Query(default="monthly", pattern="^(monthly|annual)$"),

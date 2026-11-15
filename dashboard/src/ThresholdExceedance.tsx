@@ -44,6 +44,7 @@ export default function ThresholdExceedance({
   const [records, setRecords] = useState<ExceedanceRecord[]>([]);
   const [model, setModel] = useState("");
   const [method, setMethod] = useState("");
+  const [origin, setOrigin] = useState("");
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -91,8 +92,15 @@ export default function ThresholdExceedance({
   const methods = [...new Set(modelRecords.map((row) => row.method))].sort();
   const selectedMethod = methods.includes(method) ? method : (methods[0] ?? "");
 
-  const selectedRecords = modelRecords
-    .filter((row) => row.method === selectedMethod)
+  const methodRecords = modelRecords.filter(
+    (row) => row.method === selectedMethod,
+  );
+
+  const origins = [...new Set(methodRecords.map((row) => row.origin_period))].sort();
+  const selectedOrigin = origins.includes(origin) ? origin : (origins[0] ?? "");
+
+  const selectedRecords = methodRecords
+    .filter((row) => row.origin_period === selectedOrigin)
     .sort(
       (a, b) =>
         a.target_period.localeCompare(b.target_period)
@@ -145,6 +153,18 @@ export default function ThresholdExceedance({
                 label: value,
               }))}
               onChange={setMethod}
+            />
+          )}
+
+          {origins.length > 0 && (
+            <FilterSelect
+              label="Forecast origin"
+              value={selectedOrigin}
+              options={origins.map((value) => ({
+                value,
+                label: value,
+              }))}
+              onChange={setOrigin}
             />
           )}
 
