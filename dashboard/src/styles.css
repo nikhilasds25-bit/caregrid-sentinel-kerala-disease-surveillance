@@ -249,6 +249,26 @@ tbody tr:hover { background: #fafcfb; }
 .scenario-gauge > div { position: relative; z-index: 1; }
 .scenario-gauge strong { display: block; color: #28765e; font-family: "Segoe UI", Arial, sans-serif; font-size: 28px; }
 .scenario-gauge span { display: block; color: #8a9790; font-size: 9px; margin-top: 3px; }
+
+.scenario-gauge-within {
+  background: conic-gradient(#2b896e var(--scenario-value), #edf2ef var(--scenario-value));
+}
+
+.scenario-gauge-at {
+  background: conic-gradient(#d97706 var(--scenario-value), #fff3df var(--scenario-value));
+}
+
+.scenario-gauge-over {
+  background: conic-gradient(#dc2626 var(--scenario-value), #fee2e2 var(--scenario-value));
+}
+
+.scenario-gauge-at strong {
+  color: #b45309;
+}
+
+.scenario-gauge-over strong {
+  color: #b91c1c;
+}
 .scenario-results { display: grid; gap: 8px; text-align: left; }
 .scenario-results div { display: flex; justify-content: space-between; border-bottom: 1px solid #f0f3f1; padding: 8px 2px; color: #77857e; font-size: 10px; }
 .scenario-results strong { color: #42544a; }
