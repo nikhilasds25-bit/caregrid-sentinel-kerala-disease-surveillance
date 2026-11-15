@@ -23,6 +23,9 @@ import {
 } from "lucide-react";
 import LiveSurveillancePage from "./LiveSurveillance";
 import ForecastingExperimentPage from "./ForecastingExperiment";
+import { simulateCapacity } from "./capacitySimulation";
+import { simulateLengthOfStay } from "./lengthOfStaySimulation";
+import { assessPreparedness } from "./preparednessPlanning";
 import {
   apiGet,
   downloadCsv,
@@ -439,8 +442,8 @@ function ClimatePage() {
         <FilterSelect label="Source classification" value={classification} options={[{ value: "all", label: "All source labels" }, ...result.data.classification_options.map((item) => ({ value: item, label: formatClassification(item) }))]} onChange={setClassification} />
       </div>
       <div className="climate-stats">
-        <div className="climate-stat"><span className="climate-stat-icon rain"><CloudRain size={18} /></span><div><span>Mean rainfall in view</span><strong>{weather.length ? `${(weather.reduce((sum, row) => sum + row.precipitation_sum_mm, 0) / weather.length).toFixed(1)} <small>mm / month</small>` : "—"}</strong></div></div>
-        <div className="climate-stat"><span className="climate-stat-icon temp"><Thermometer size={18} /></span><div><span>Mean temperature in view</span><strong>{weather.length ? `${(weather.reduce((sum, row) => sum + row.temperature_2m_mean_c, 0) / weather.length).toFixed(1)} <small>°C</small>` : "—"}</strong></div></div>
+        <div className="climate-stat"><span className="climate-stat-icon rain"><CloudRain size={18} /></span><div><span>Mean rainfall in view</span><strong>{weather.length ? <>{(weather.reduce((sum, row) => sum + row.precipitation_sum_mm, 0) / weather.length).toFixed(1)} <small>mm / month</small></> : "—"}</strong></div></div>
+        <div className="climate-stat"><span className="climate-stat-icon temp"><Thermometer size={18} /></span><div><span>Mean temperature in view</span><strong>{weather.length ? <>{(weather.reduce((sum, row) => sum + row.temperature_2m_mean_c, 0) / weather.length).toFixed(1)} <small>°C</small></> : "—"}</strong></div></div>
         <div className="climate-stat"><span className="climate-stat-icon cases"><Activity size={18} /></span><div><span>Reported cases · selected label</span><strong>{yearTotal === null ? "Choose one label" : fmt(yearTotal)}{yearTotal !== null && <small> cases</small>}</strong></div></div>
       </div>
       <div className="grid-two">
@@ -468,30 +471,175 @@ function ForecastPage() {
   return <ForecastingExperimentPage />;
 }
 
-function CapacityPage() {
+export function CapacityPage() {
+  const [simulationMode, setSimulationMode] = useState<"manual" | "disease">("manual");
+  const [diseaseCases, setDiseaseCases] = useState("");
+  const [hospitalizationRate, setHospitalizationRate] = useState("");
   const [capacity, setCapacity] = useState("");
   const [occupied, setOccupied] = useState("");
   const [surge, setSurge] = useState("");
+  const [admissionDays, setAdmissionDays] = useState("");
+  const [stayDays, setStayDays] = useState("");
   const numeric = [capacity, occupied, surge].map((value) => value === "" ? null : Number(value));
   const [beds, occupiedBeds, addedPatients] = numeric;
+  const bedInputsValid =
+    beds !== null && occupiedBeds !== null &&
+    Number.isInteger(beds) && Number.isInteger(occupiedBeds) &&
+    beds > 0 && occupiedBeds >= 0 && occupiedBeds <= beds;
+
+  const manualInputsValid =
+    addedPatients !== null &&
+    Number.isInteger(addedPatients) &&
+    addedPatients >= 0;
+  const demandInputsValid =
+    diseaseCases !== "" &&
+    hospitalizationRate !== "" &&
+    Number.isInteger(Number(diseaseCases)) &&
+    Number(diseaseCases) >= 0 &&
+    Number.isFinite(Number(hospitalizationRate)) &&
+    Number(hospitalizationRate) >= 0 &&
+    Number(hospitalizationRate) <= 100;
+
+  const estimatedAdmissions = demandInputsValid
+    ? Math.ceil(Number(diseaseCases) * Number(hospitalizationRate) / 100)
+    : null;
+
+  const effectivePatients =
+    simulationMode === "disease" ? estimatedAdmissions : addedPatients;
+
   const valid =
-    beds !== null && occupiedBeds !== null && addedPatients !== null &&
-    Number.isInteger(beds) && Number.isInteger(occupiedBeds) && Number.isInteger(addedPatients) &&
-    beds > 0 && occupiedBeds >= 0 && occupiedBeds <= beds && addedPatients >= 0;
-  const scenarioOccupancy = valid ? occupiedBeds + addedPatients : null;
-  const scenarioPercent = valid ? (scenarioOccupancy! / beds!) * 100 : null;
+    bedInputsValid &&
+    (simulationMode === "disease" ? demandInputsValid : manualInputsValid);
+
+  const simulation =
+    valid && effectivePatients !== null
+      ? simulateCapacity({
+          diseaseCases: effectivePatients,
+          hospitalizationRate: 100,
+          totalBeds: beds!,
+          occupiedBeds: occupiedBeds!,
+        })
+      : null;
+
+  const admissionPeriod = admissionDays === "" ? null : Number(admissionDays);
+  const lengthOfStay = stayDays === "" ? null : Number(stayDays);
+
+  const stayInputsValid =
+    admissionPeriod !== null &&
+    lengthOfStay !== null &&
+    Number.isInteger(admissionPeriod) &&
+    Number.isInteger(lengthOfStay) &&
+    admissionPeriod >= 1 &&
+    admissionPeriod <= 365 &&
+    lengthOfStay >= 1 &&
+    lengthOfStay <= 365;
+
+  const staySimulation =
+    simulation !== null &&
+    stayInputsValid
+      ? simulateLengthOfStay({
+          estimatedAdmissions: simulation.estimatedAdmissions,
+          totalBeds: beds!,
+          initiallyOccupiedBeds: occupiedBeds!,
+          admissionPeriodDays: admissionPeriod!,
+          lengthOfStayDays: lengthOfStay!,
+        })
+      : null;
+
+  const preparedness =
+    staySimulation !== null
+      ? assessPreparedness({
+          totalBeds: beds!,
+          peakOccupiedBeds: staySimulation.peakOccupiedBeds,
+          peakBedShortage: staySimulation.peakBedShortage,
+        })
+      : simulation !== null
+        ? assessPreparedness({
+            totalBeds: beds!,
+            peakOccupiedBeds: simulation.projectedOccupiedBeds,
+            peakBedShortage: simulation.bedShortage,
+          })
+        : null;
+
+  const scenarioOccupancy = simulation?.projectedOccupiedBeds ?? null;
+  const scenarioPercent = simulation?.occupancyPercent ?? null;
   return (
     <>
       <PageHeading eyebrow="HYPOTHETICAL PLANNING TOOL" title="Hospital capacity simulator" description="Explore a user-defined capacity scenario. No hospital bed or occupancy data is connected." action={<span className="scenario-badge"><SlidersHorizontal size={14} /> SCENARIO ONLY</span>} />
       <Notice title="All inputs are hypothetical and supplied by you" tone="warning">
         Results are arithmetic scenarios—not real hospital status, occupancy, demand estimates, staffing guidance, or a recommendation.
       </Notice>
+      <Panel
+        title="Hypothetical disease-related hospital demand"
+        subtitle="Estimate admissions from user-defined assumptions"
+      >
+        <div className="scenario-fields">
+          <NumberField
+            label="Hypothetical disease cases"
+            value={diseaseCases}
+            onChange={setDiseaseCases}
+            hint="Assumed cases, not a validated future forecast"
+          />
+          <NumberField
+            label="Assumed hospitalization rate (%)"
+            value={hospitalizationRate}
+            onChange={setHospitalizationRate}
+            hint="User-defined percentage between 0 and 100"
+          />
+        </div>
+        {estimatedAdmissions !== null ? (
+          <p className="chart-caption">
+            Estimated admissions: <strong>{fmt(estimatedAdmissions)}</strong>.
+            This illustrative estimate assumes the supplied hospitalization
+            rate applies to all entered cases. It is not an observed admission count.
+          </p>
+        ) : (
+          <EmptyState>
+            Enter a non-negative whole-number case count and a hospitalization
+            percentage between 0 and 100.
+          </EmptyState>
+        )}
+        <p className="chart-caption">
+          Select "Disease-based scenario" below to use these estimated
+          admissions in the hypothetical bed-capacity calculation.
+        </p>
+      </Panel>
       <div className="capacity-layout">
         <Panel title="Scenario assumptions" subtitle="Enter hypothetical values to calculate an illustrative scenario">
           <div className="scenario-fields">
+            <label className="number-field">
+              <span>Simulation mode</span>
+              <select
+                aria-label="Simulation mode"
+                value={simulationMode}
+                onChange={(event) =>
+                  setSimulationMode(event.target.value as "manual" | "disease")
+                }
+              >
+                <option value="manual">Manual scenario</option>
+                <option value="disease">Disease-based scenario</option>
+              </select>
+              <small>Choose how additional patients are estimated.</small>
+            </label>
             <NumberField label="Hypothetical bed capacity" value={capacity} onChange={setCapacity} hint="Total beds in this example" />
             <NumberField label="Hypothetical occupied beds" value={occupied} onChange={setOccupied} hint="Must not exceed scenario capacity" />
-            <NumberField label="Additional hypothetical patients" value={surge} onChange={setSurge} hint="Incremental admissions in this scenario" />
+            {simulationMode === "manual" ? (
+              <NumberField
+                label="Additional hypothetical patients"
+                value={surge}
+                onChange={setSurge}
+                hint="Manually assumed additional patients"
+              />
+            ) : (
+              <p className="chart-caption">
+                Additional patients from disease scenario:{" "}
+                <strong>
+                  {estimatedAdmissions === null
+                    ? "Enter valid disease assumptions above"
+                    : fmt(estimatedAdmissions)}
+                </strong>
+              </p>
+            )}
           </div>
           {occupiedBeds !== null && beds !== null && occupiedBeds > beds && <div className="field-error" role="alert">Scenario occupied beds cannot exceed the hypothetical capacity.</div>}
           <div className="scenario-reset"><button className="button button-secondary" onClick={() => { setCapacity(""); setOccupied(""); setSurge(""); }}>Clear scenario</button><span>Inputs are not stored or sent to the server.</span></div>
@@ -499,21 +647,160 @@ function CapacityPage() {
         <Panel title="Illustrative scenario output" subtitle="Calculated only from the assumptions entered">
           {valid ? (
             <div className="scenario-output">
-              <div className="scenario-gauge" style={{ "--scenario-value": `${Math.min(scenarioPercent!, 100)}%` } as React.CSSProperties}>
+              <div className={`scenario-gauge ${
+                  simulation!.stressLevel === "over_capacity"
+                    ? "scenario-gauge-over"
+                    : simulation!.stressLevel === "at_capacity"
+                      ? "scenario-gauge-at"
+                      : "scenario-gauge-within"
+                }`} style={{ "--scenario-value": `${Math.min(scenarioPercent!, 100)}%` } as React.CSSProperties}>
                 <div><strong>{scenarioPercent!.toFixed(1)}%</strong><span>scenario occupancy</span></div>
               </div>
               <div className="scenario-results">
                 <div><span>Scenario occupied beds</span><strong>{fmt(scenarioOccupancy!)}</strong></div>
-                <div><span>Remaining hypothetical capacity</span><strong>{fmt(beds! - scenarioOccupancy!)}</strong></div>
+                <div>
+                  <span>Remaining available beds (scenario)</span>
+                  <strong>{fmt(simulation!.remainingBeds)}</strong>
+                </div>
+                <div>
+                  <span>Hypothetical bed shortage</span>
+                  <strong>{fmt(simulation!.bedShortage)}</strong>
+                </div>
+                <div>
+                  <span>Capacity status</span>
+                  <strong>
+                    {simulation!.stressLevel === "over_capacity"
+                      ? "Over capacity"
+                      : simulation!.stressLevel === "at_capacity"
+                        ? "At capacity"
+                        : "Within capacity"}
+                  </strong>
+                </div>
                 <div><span>Input capacity</span><strong>{fmt(beds!)}</strong></div>
               </div>
               <div className="scenario-disclaimer">Scenario output only. This is not actual hospital occupancy or an operational alert.</div>
             </div>
-          ) : <EmptyState>Enter valid hypothetical integers in all three fields to see a scenario. No values are prefilled.</EmptyState>}
+          ) : <EmptyState>Enter valid hypothetical inputs for the selected simulation mode.</EmptyState>}
         </Panel>
       </div>
+      <Panel
+        title="Hypothetical preparedness planning"
+        subtitle="Explore capacity pressure under your scenario assumptions"
+      >
+        {preparedness ? (
+          <>
+            <p className="chart-caption">
+              Scenario basis:{" "}
+              <strong>
+                {staySimulation
+                  ? "Peak occupancy across the length-of-stay simulation"
+                  : "Immediate-demand occupancy"}
+              </strong>
+            </p>
+
+            <div className="scenario-results">
+              <div>
+                <span>Simulated capacity status</span>
+                <strong>{preparedness.title}</strong>
+              </div>
+            </div>
+
+            <h3>Scenario-planning considerations</h3>
+            <ul>
+              {preparedness.considerations.map((consideration) => (
+                <li key={consideration}>{consideration}</li>
+              ))}
+            </ul>
+
+            <p className="chart-caption">
+              These considerations are generated from hypothetical
+              inputs only. They are not clinical guidance, operational
+              recommendations, or verified hospital alerts.
+            </p>
+          </>
+        ) : (
+          <EmptyState>
+            Enter valid hypothetical capacity assumptions to explore
+            preparedness planning considerations.
+          </EmptyState>
+        )}
+      </Panel>
+
+      <Panel
+        title="Length-of-stay scenario"
+        subtitle="Explore hypothetical admissions and discharges over time"
+      >
+        <div className="scenario-fields">
+          <NumberField
+            label="Admission period (days)"
+            value={admissionDays}
+            onChange={setAdmissionDays}
+            hint="Whole number from 1 to 365"
+          />
+          <NumberField
+            label="Length of stay (days)"
+            value={stayDays}
+            onChange={setStayDays}
+            hint="Whole number from 1 to 365"
+          />
+        </div>
+
+        {staySimulation ? (
+          <>
+          <div className="scenario-results">
+            <div>
+              <span>Peak occupied beds</span>
+              <strong>{fmt(staySimulation.peakOccupiedBeds)}</strong>
+            </div>
+            <div>
+              <span>Peak hypothetical bed shortage</span>
+              <strong>{fmt(staySimulation.peakBedShortage)}</strong>
+            </div>
+            <div>
+              <span>Peak occupancy</span>
+              <strong>
+                {staySimulation.peakOccupancyPercent.toFixed(1)}%
+              </strong>
+            </div>
+          </div>
+          <TrendChart
+            data={staySimulation.daily.map((row) => ({
+              period: `Day ${row.day}`,
+              occupied: row.occupiedBeds,
+              remaining: row.remainingBeds,
+              shortage: row.bedShortage,
+            }))}
+            dataKeys={[
+              { key: "occupied", label: "Occupied beds" },
+              { key: "remaining", label: "Available beds" },
+              { key: "shortage", label: "Bed shortage" },
+            ]}
+            ariaLabel="Hypothetical daily hospital bed occupancy and capacity"
+            height={300}
+          />
+          </>
+        ) : (
+          <EmptyState>
+            Complete the selected capacity scenario and enter valid
+            admission-period and length-of-stay assumptions.
+          </EmptyState>
+        )}
+
+        <p className="chart-caption">
+          Additional patients arrive approximately evenly across the
+          admission period and remain for the specified length of stay.
+          Existing occupied beds remain occupied throughout this simulation.
+          Results are hypothetical, not actual hospital occupancy predictions.
+        </p>
+      </Panel>
+
       <Notice title="No real hospital feeds" tone="neutral">
-        This simulator does not use disease counts to infer admissions, occupied beds, or hospital stress. It performs only the arithmetic shown above.
+        The disease-based mode estimates admissions from hypothetical disease
+        cases and a user-defined hospitalization rate. All additional patients
+        are assumed to require beds simultaneously. No verified hospital
+        occupancy or capacity data is connected. These are illustrative
+        planning scenarios, not real hospital-demand predictions or
+        operational recommendations.
       </Notice>
     </>
   );
