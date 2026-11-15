@@ -20,6 +20,15 @@ interface ForecastRecord {
   prediction_type: string;
 }
 
+interface ObservationRecord {
+  disease: Disease;
+  district: string;
+  reporting_period: string;
+  observed_count: number;
+  classification: string;
+  observation_type: string;
+}
+
 interface ApiResponse<T> {
   data: T[];
   meta: {
@@ -33,6 +42,8 @@ export default function AnalyticalDashboard() {
   const [disease, setDisease] = useState<Disease>("Dengue");
   const [district, setDistrict] = useState("Ernakulam");
   const [forecasts, setForecasts] = useState<ForecastRecord[]>([]);
+  const [observations, setObservations] = useState<ObservationRecord[]>([]);
+  const [observationError, setObservationError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -67,6 +78,48 @@ export default function AnalyticalDashboard() {
     };
   }, [disease, district]);
 
+  useEffect(() => {
+    let active = true;
+
+    setObservations([]);
+    setObservationError(null);
+
+    const params = new URLSearchParams({
+      source: "district_dashboard",
+      disease,
+      district,
+      granularity: "monthly",
+      classification: "Confirmed",
+    });
+
+    apiGet<ApiResponse<ObservationRecord>>(
+      `/api/v1/surveillance/observations?${params}`,
+    )
+      .then((response) => {
+        if (!active) return;
+
+        if (!Array.isArray(response?.data)) {
+          setObservationError(
+            "Actual observations are unavailable or have an unexpected response format.",
+          );
+          return;
+        }
+
+        setObservations(response.data);
+      })
+      .catch((err: unknown) => {
+        if (active) {
+          setObservationError(
+            err instanceof Error ? err.message : "Unable to load actual observations.",
+          );
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [disease, district]);
+
   const [model, setModel] = useState("");
   const [origin, setOrigin] = useState("");
 
@@ -87,8 +140,21 @@ export default function AnalyticalDashboard() {
     .filter((row) => row.origin_period === selectedOrigin)
     .sort((a, b) => a.horizon - b.horizon);
 
+  const observationsByPeriod = new Map(
+    observations
+      .filter(
+        (row) =>
+          row.disease === disease &&
+          row.district === district &&
+          row.classification === "Confirmed" &&
+          row.observation_type === "reported_observation",
+      )
+      .map((row) => [row.reporting_period, row.observed_count]),
+  );
+
   const chartData = chartRows.map((row) => ({
     period: row.target_period,
+    actual: observationsByPeriod.get(row.target_period) ?? null,
     prediction: row.predictive_mean,
     lower: row.display_80_lower,
     upper: row.display_80_upper,
@@ -163,6 +229,9 @@ export default function AnalyticalDashboard() {
 
         {loading && <LoadingState label="Loading retrospective forecasts…" />}
         {error && <ErrorState message={error} />}
+        {observationError && (
+          <ErrorState message={`Actual observations: ${observationError}`} />
+        )}
 
         {!loading && !error && (
           <>
@@ -175,6 +244,7 @@ export default function AnalyticalDashboard() {
             <TrendChart
               data={chartData}
               dataKeys={[
+                { key: "actual", label: "Actual Confirmed cases" },
                 { key: "prediction", label: "Predicted cases" },
                 { key: "lower", label: "80% interval lower bound" },
                 { key: "upper", label: "80% interval upper bound" },
@@ -184,6 +254,8 @@ export default function AnalyticalDashboard() {
             />
 
             <p className="chart-caption">
+              Actual values are source-reported district-month Confirmed counts.
+              Missing observations are not replaced with zero.
               The 80% bounds are displayed as separate lines, not a shaded
               interval. Interval coverage may be inadequate, particularly
               for some models and longer horizons.

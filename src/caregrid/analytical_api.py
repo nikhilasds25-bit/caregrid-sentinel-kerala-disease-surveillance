@@ -155,6 +155,7 @@ def exceedance_assessments(
 
 @router.get("/surveillance/observations")
 def surveillance_observations(
+    source: Literal["curated", "district_dashboard"] = "curated",
     disease: Literal["Dengue", "Leptospirosis"] | None = None,
     district: str | None = None,
     classification: str | None = None,
@@ -163,6 +164,67 @@ def surveillance_observations(
 ):
     """Return source-native observations, not model-generated predictions."""
     from caregrid.data_access import DataRepository, DatasetUnavailable
+
+    if source == "district_dashboard":
+        if granularity != "monthly":
+            raise HTTPException(
+                status_code=422,
+                detail="District dashboard observations are monthly only.",
+            )
+
+        from caregrid.outbreak_detection import load_confirmed_observations
+
+        relative_path = (
+            "data/candidates/"
+            "kerala_district_monthly_disease_dashboard_2016_2025.csv"
+        )
+
+        try:
+            frame = load_confirmed_observations(ROOT / relative_path)
+        except (OSError, ValueError, KeyError, pd.errors.ParserError) as exc:
+            raise HTTPException(
+                status_code=503,
+                detail="District-month observations are unavailable.",
+            ) from exc
+
+        filters = {
+            "source": source,
+            "disease": disease,
+            "district": district,
+            "classification": classification,
+            "granularity": granularity,
+            "year": year,
+        }
+
+        if disease is not None:
+            frame = frame.loc[frame["disease"] == disease]
+        if district is not None:
+            frame = frame.loc[frame["district"] == district]
+        if year is not None:
+            frame = frame.loc[frame["period"].str[:4] == str(year)]
+        if classification is not None and classification != "Confirmed":
+            frame = frame.iloc[0:0]
+
+        records = [
+            {
+                "disease": row.disease,
+                "district": row.district,
+                "reporting_period": row.period,
+                "observed_count": int(row.cases),
+                "classification": "Confirmed",
+                "temporal_granularity": "monthly",
+                "observation_type": "reported_observation",
+            }
+            for row in frame.itertuples(index=False)
+        ]
+
+        response = respond(records, filters)
+        response["meta"]["geographic_granularity"] = "district"
+        response["meta"]["source_dataset"] = relative_path
+        response["meta"]["source_scope"] = (
+            "Kerala Health Department dashboard; available Confirmed counts only"
+        )
+        return response
 
     try:
         data = DataRepository.load()

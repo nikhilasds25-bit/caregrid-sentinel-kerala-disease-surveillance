@@ -145,3 +145,69 @@ def test_detection_signals_remain_exploratory():
     assert records
     assert all("unusual_activity_flag" in row for row in records)
     assert all("evidence_role" in row for row in records)
+
+
+def test_district_dashboard_returns_confirmed_monthly_observations():
+    response = client.get(
+        "/api/v1/surveillance/observations",
+        params={
+            "source": "district_dashboard",
+            "disease": "Dengue",
+            "district": "Ernakulam",
+            "granularity": "monthly",
+            "classification": "Confirmed",
+        },
+    )
+
+    assert response.status_code == 200
+    payload = response.json()
+    records = payload["data"]
+
+    assert len(records) == 120
+    assert payload["meta"]["geographic_granularity"] == "district"
+    assert payload["meta"]["source_dataset"].endswith(
+        "kerala_district_monthly_disease_dashboard_2016_2025.csv"
+    )
+    assert all(row["disease"] == "Dengue" for row in records)
+    assert all(row["district"] == "Ernakulam" for row in records)
+    assert all(row["classification"] == "Confirmed" for row in records)
+    assert all(row["temporal_granularity"] == "monthly" for row in records)
+    assert all(row["observation_type"] == "reported_observation" for row in records)
+
+
+def test_curated_monthly_district_restriction_is_preserved():
+    response = client.get(
+        "/api/v1/surveillance/observations",
+        params={
+            "source": "curated",
+            "district": "Ernakulam",
+            "granularity": "monthly",
+        },
+    )
+    assert response.status_code == 422
+
+
+def test_district_dashboard_rejects_annual_granularity():
+    response = client.get(
+        "/api/v1/surveillance/observations",
+        params={
+            "source": "district_dashboard",
+            "granularity": "annual",
+        },
+    )
+    assert response.status_code == 422
+
+
+def test_district_dashboard_preserves_empty_results():
+    response = client.get(
+        "/api/v1/surveillance/observations",
+        params={
+            "source": "district_dashboard",
+            "disease": "Dengue",
+            "district": "Ernakulam",
+            "classification": "Probable",
+        },
+    )
+
+    assert response.status_code == 200
+    assert response.json()["data"] == []

@@ -44,11 +44,20 @@ The observations endpoint additionally provides `geographic_granularity` in meta
 Returns reported observations, not model-generated predictions.
 
 Supported filters:
+- `source`: `curated` (default) or `district_dashboard`
 - `disease`
 - `district`
 - `classification`
 - `granularity`: monthly or annual
 - `year`: 2020–2024
+
+**Curated source:** Preserves the existing statewide monthly and district-level annual observations.
+
+**District dashboard source:** Provides available monthly Confirmed district-level observations from the Kerala Health Department dashboard dataset (2016–2025). These records support retrospective actual-versus-predicted chart comparisons.
+
+District dashboard observations use the same `data` and `meta` response envelope, with source information recorded in metadata. Unavailable observations are excluded rather than replaced with zero.
+
+The `year` filter currently accepts 2020–2024 even though the district dashboard source covers 2016–2025.
 
 Monthly observations are statewide and cover available months in 2021–2024.
 
